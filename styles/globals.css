@@ -16,10 +16,11 @@ a {
 }
 
 :root {
-  --color-darkest-blue: #304D6D;
-  --color-dark-blue: #545E75;
-  --color-blue: #63ADF2;
-  --color-light-blue: #A7CCED;
-  --color-blue-grey: #82A0BC;
+  --color-darkest-blue: #304d6d;
+  --color-dark-blue: #545e75;
+  --color-blue: #63adf2;
+  --color-light-blue: #a7cced;
+  --color-blue-grey: #82a0bc;
   --color-grey: #cdd9e4;
+  --color-white: #ffffff;
 }
