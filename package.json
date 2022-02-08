@@ -8,6 +8,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/material": "^5.3.1",
     "@reach/checkbox": "^0.16.0",
     "@reach/dialog": "^0.16.2",
     "@reach/visually-hidden": "^0.16.0",
