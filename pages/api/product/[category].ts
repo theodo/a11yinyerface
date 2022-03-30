@@ -1,0 +1,92 @@
+import type { NextApiRequest, NextApiResponse } from 'next';
+import { Product, ProductCategory } from 'src/types/product';
+
+const fruitsProducts: Product[] = [
+	{
+		id: '709ac8fe-db4b-4a53-8878-37e2c1153465',
+		title: 'Orange',
+		description: 'Sed accumsan felis.',
+		price: '$ 5.23 each',
+		previewImageUrl: '/product_assets/fruits/fruit_orange.jpeg',
+		category: ProductCategory.FRUITS,
+	},
+	{
+		id: '2c0ba82c-5920-448b-9445-7db6f06a779c',
+		title: 'Green Apple',
+		description:
+			'Dolor cillum sunt anim ex. Quis deserunt aute nulla in eiusmod',
+		price: '$ 3.15 each',
+		previewImageUrl: '/product_assets/fruits/fruit_apple_green.jpeg',
+		category: ProductCategory.FRUITS,
+	},
+	{
+		id: 'fe989f52-2bfe-4a6d-b972-57905279e21c',
+		title: 'Red Apple',
+		description: 'Tarragon - Primerba, Paste',
+		price: '$ 3.99 each',
+		previewImageUrl: '/product_assets/fruits/fruit_apple_red.jpeg',
+		category: ProductCategory.FRUITS,
+	},
+	{
+		id: 'a2250c63-5724-4011-98d7-934b84daabb1',
+		title: 'Yellow Apple',
+		description: 'Elit id velit dolore nulla ex quis laborum pariatur',
+		price: '$ 2.99 each',
+		previewImageUrl: '/product_assets/fruits/fruit_apple_yellow.jpeg',
+		category: ProductCategory.FRUITS,
+	},
+	{
+		id: 'a05be71b-810d-4d73-af15-c2be4d04fc39',
+		title: 'Peach',
+		description: 'Consectetur nulla eiusmod magna ullamco est',
+		price: '$ 1.34 each',
+		previewImageUrl: '/product_assets/fruits/fruit_peach.jpeg',
+		category: ProductCategory.FRUITS,
+	},
+	{
+		id: 'fc0ac67e-40cb-4cf4-8126-be816a4e5b52',
+		title: 'Apricot',
+		description: 'irure fugiat excepteur nostrud id elit ipsum. ',
+		price: '$ 6.12 each',
+		previewImageUrl: '/product_assets/fruits/fruit_apricot.jpeg',
+		category: ProductCategory.FRUITS,
+	},
+	{
+		id: '724ebd76-70ea-45d6-bcc2-6184c09395be',
+		title: 'Plum',
+		description: 'Culpa ex proident cillum amet sit ipsum. Est ',
+		price: '$ 4.94 each',
+		previewImageUrl: '/product_assets/fruits/fruit_plum.jpeg',
+		category: ProductCategory.FRUITS,
+	},
+	{
+		id: '1c91b914-22e3-44fd-ba4c-b4a8ec4e868f',
+		title: 'Watermelon',
+		description: 'eu nostrud magna adipisicing duis et id.',
+		price: '$ 2.92 each',
+		previewImageUrl: '/product_assets/fruits/fruit_watermelon.jpeg',
+		category: ProductCategory.FRUITS,
+	},
+	{
+		id: 'aea82384-544d-40cb-b9be-6b5129ce489e',
+		title: 'Strawberry',
+		description: 'Ea sint qui duis do commodo. Culpa elit et sit ',
+		price: '$ 1.27 each',
+		previewImageUrl: '/product_assets/fruits/fruit_strawberry.jpeg',
+		category: ProductCategory.FRUITS,
+	},
+];
+
+export default function handler(
+	req: NextApiRequest,
+	res: NextApiResponse<Product[]>
+) {
+	const { category } = req.query as { [key: string]: string };
+
+	// const filteredProducts = fruitsProducts.filter(
+	// 	(product) => product.category === category.toUpperCase()
+	// );
+	const filteredProducts = fruitsProducts;
+
+	res.status(200).json(filteredProducts);
+}
