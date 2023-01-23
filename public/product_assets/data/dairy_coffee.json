@@ -1,0 +1,130 @@
+[
+  {
+    "id": "ea86d695-59b7-465d-94b9-4b31ca4f8ab8",
+    "title": "Watermelon",
+    "description": "Cillum in laborum eu sint.",
+    "price": "$ 2.42 each",
+    "previewImageUrl": "/product_assets/dairy_coffee/american_cheese.jpg",
+    "category": "DAIRY_COFFEE"
+  },
+  {
+    "id": "3b4470d2-ce5c-4967-8088-1162b191d1d8",
+    "title": "Green Apple",
+    "description": "Ipsum velit officia officia eiusmod commodo tempor.",
+    "price": "$ 1.69 each",
+    "previewImageUrl": "/product_assets/dairy_coffee/butter.jpg",
+    "category": "DAIRY_COFFEE"
+  },
+  {
+    "id": "d98c63f7-323c-49a0-879b-a49e76b55d84",
+    "title": "Apricot",
+    "description": "Proident ea voluptate veniam nulla duis fugiat veniam.",
+    "price": "$ 1.22 each",
+    "previewImageUrl": "/product_assets/dairy_coffee/coffee_beans.jpg",
+    "category": "DAIRY_COFFEE"
+  },
+  {
+    "id": "b119f376-0228-4d9f-a0c0-56cc46d62c51",
+    "title": "Plum",
+    "description": "Exercitation nostrud nisi labore id occaecat quis nulla.",
+    "price": "$ 3.21 each",
+    "previewImageUrl": "/product_assets/dairy_coffee/coffee_capsule.jpg",
+    "category": "DAIRY_COFFEE"
+  },
+  {
+    "id": "e9591ded-7b1a-4428-97a1-1435a675306c",
+    "title": "Yellow Apple",
+    "description": "Laborum laboris dolore eiusmod sint dolor eiusmod cillum.",
+    "price": "$ 4.11 each",
+    "previewImageUrl": "/product_assets/dairy_coffee/coffee_paper_filter.jpg",
+    "category": "DAIRY_COFFEE"
+  },
+  {
+    "id": "24d3e3d3-9dd5-467d-a1b8-f1dfa4959dba",
+    "title": "Orange",
+    "description": "Eiusmod dolore elit cillum ex sint sunt irure laborum.",
+    "price": "$ 1.21 each",
+    "previewImageUrl": "/product_assets/dairy_coffee/coffee_powder.jpg",
+    "category": "DAIRY_COFFEE"
+  },
+  {
+    "id": "69824912-20ca-4e74-951d-82cc9a5c43e2",
+    "title": "Strawberry",
+    "description": "Elit ex in aliqua magna ut voluptate labore ullamco dolor voluptate in ex.",
+    "price": "$ 1.61 each",
+    "previewImageUrl": "/product_assets/dairy_coffee/condensed_milk.jpg",
+    "category": "DAIRY_COFFEE"
+  },
+  {
+    "id": "8aebeb2f-2442-4801-8c73-80e0901e8ba6",
+    "title": "Peach",
+    "description": "Excepteur mollit enim et dolore ipsum eu non reprehenderit.",
+    "price": "$ 1.36 each",
+    "previewImageUrl": "/product_assets/dairy_coffee/cream.jpg",
+    "category": "DAIRY_COFFEE"
+  },
+  {
+    "id": "6e1301f3-c547-4166-9487-ede8cba2e88e",
+    "title": "Red Apple",
+    "description": "Consectetur excepteur sit id enim deserunt laborum officia.",
+    "price": "$ 2.57 each",
+    "previewImageUrl": "/product_assets/dairy_coffee/ghee.jpg",
+    "category": "DAIRY_COFFEE"
+  },
+  {
+    "id": "79cf61db-65cd-422e-a077-384f4e45a64c",
+    "title": "Watermelon",
+    "description": "Aliquip id esse dolor ad adipisicing labore cillum sint est irure.",
+    "price": "$ 3.91 each",
+    "previewImageUrl": "/product_assets/dairy_coffee/ice_cream.jpg",
+    "category": "DAIRY_COFFEE"
+  },
+  {
+    "id": "968805b1-cc7b-4597-9f20-edf2df7798b4",
+    "title": "Green Apple",
+    "description": "Laborum sint laboris consectetur officia.",
+    "price": "$ 7.23 each",
+    "previewImageUrl": "/product_assets/dairy_coffee/milk.jpg",
+    "category": "DAIRY_COFFEE"
+  },
+  {
+    "id": "d67c00e2-f3a3-4ffe-a06c-0d08c8d4ee3f",
+    "title": "Apricot",
+    "description": "Deserunt voluptate dolor est quis aute.",
+    "price": "$ 1.91 each",
+    "previewImageUrl": "/product_assets/dairy_coffee/parmesan_cheese.jpg",
+    "category": "DAIRY_COFFEE"
+  },
+  {
+    "id": "79ad3f98-0719-4dd0-970a-8b53296f10e1",
+    "title": "Plum",
+    "description": "Excepteur eu anim consequat irure cillum fugiat nostrud.",
+    "price": "$ 3.97 each",
+    "previewImageUrl": "/product_assets/dairy_coffee/powdered_milk.jpg",
+    "category": "DAIRY_COFFEE"
+  },
+  {
+    "id": "93bd748b-40b1-4064-9bff-205d97ac0404",
+    "title": "Yellow Apple",
+    "description": "Aute sit officia duis excepteur.",
+    "price": "$ 1.04 each",
+    "previewImageUrl": "/product_assets/dairy_coffee/soft_cheese.jpg",
+    "category": "DAIRY_COFFEE"
+  },
+  {
+    "id": "7cfabc56-e24f-4631-bb43-99c3dd8b4e50",
+    "title": "Orange",
+    "description": "Occaecat ex consequat qui nulla sint proident do elit.",
+    "price": "$ 1.73 each",
+    "previewImageUrl": "/product_assets/dairy_coffee/swiss_cheese.jpg",
+    "category": "DAIRY_COFFEE"
+  },
+  {
+    "id": "6c543f63-f66a-4b66-9910-d56943d0fd60",
+    "title": "Strawberry",
+    "description": "Pariatur dolore amet cupidatat eiusmod pariatur officia.",
+    "price": "$ 3.18 each",
+    "previewImageUrl": "/product_assets/dairy_coffee/yogurt.jpg",
+    "category": "DAIRY_COFFEE"
+  }
+]
