@@ -1,31 +1,19 @@
-import {
-	Box,
-	Button,
-	Typography,
-	AppBar as MuiAppBar,
-	Toolbar,
-	Link,
-} from '@mui/material';
+import { Box, Typography, AppBar as MuiAppBar, Toolbar } from "@mui/material";
 
 const AppBar: React.FC = () => {
-	return (
-		<Box sx={{ flexGrow: 1 }}>
-			<MuiAppBar position='static'>
-				<Toolbar>
-					<Typography
-						variant='h6'
-						color='white'
-						sx={{ flexGrow: 1 }}
-						component={Link}
-						href='/'
-					>
-						a11y inyerface
-					</Typography>
-					<Button color='inherit'>Login</Button>
-				</Toolbar>
-			</MuiAppBar>
-		</Box>
-	);
+  return (
+    <MuiAppBar position="static">
+      <Toolbar>
+        <Typography
+          variant="h6"
+          color="white"
+          sx={{ flexGrow: 1, justifyContent: "center", display: "flex" }}
+        >
+          A11yInYerFace
+        </Typography>
+      </Toolbar>
+    </MuiAppBar>
+  );
 };
 
 export default AppBar;
