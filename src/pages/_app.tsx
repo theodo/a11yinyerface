@@ -1,5 +1,5 @@
 // Imported from https://github.com/mui/material-ui/blob/5b0d0c343c9b195e7328cc20461c9adc1f5ac02d/examples/nextjs-with-typescript/pages/_app.tsx
-import '../styles/globals.css';
+import '../../styles/globals.css';
 import React from 'react';
 import Head from 'next/head';
 import { AppProps } from 'next/app';
