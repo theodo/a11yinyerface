@@ -13,7 +13,7 @@ const fetcher = (url: string) => fetch(url).then((res) => res.json());
 const FruitsDistractionsPage: NextPage = () => {
 	const { data, error } = useSwr<Product[]>('/api/product/fruits', fetcher);
 
-	useSimulator([SIMULATE_EFFECT.DISTRACTIONS]);
+	useSimulator([SIMULATE_EFFECT.DRUNKEN_MOUSE]);
 
 	if (data === undefined || error) {
 		return <CircularProgress />;
