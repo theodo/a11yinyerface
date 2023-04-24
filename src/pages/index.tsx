@@ -37,7 +37,7 @@ const Home: NextPage = () => {
                 <List list-style-type="disc">
                   <li>2 pommes</li>
                   <li>2 oeufs</li>
-                  <li>200g de farine</li>
+                  <li>200g de farine de blé</li>
                 </List>
               </Paper>
             </Box>
