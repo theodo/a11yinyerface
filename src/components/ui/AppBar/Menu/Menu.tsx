@@ -1,4 +1,5 @@
 import AgricultureTwoToneIcon from "@mui/icons-material/AgricultureTwoTone";
+import GrassTwoToneIcon from "@mui/icons-material/GrassTwoTone";
 import MenuIcon from "@mui/icons-material/Menu";
 import {
   Drawer,
@@ -23,6 +24,11 @@ const menuItems = [
     text: ProductCategory.FRUITS,
     link: "fruits",
     icon: <AgricultureTwoToneIcon />,
+  },
+  {
+    text: ProductCategory.FLOURS,
+    link: "flour",
+    icon: <GrassTwoToneIcon />,
   },
 ];
 
