@@ -1,0 +1,82 @@
+[
+  {
+    "id": "6b121d2e-e02b-11ed-b5ea-0242ac120002",
+    "title": "Farine de d'épeautre",
+    "description": "Farine d'épeautre",
+    "price": "1,23 €/kg",
+    "previewImageUrl": "/product_assets/flours/spelt-flour.jpg",
+    "category": "SPELT_FLOUR"
+  },
+  {
+    "id": "609e2684-e2b6-11ed-b5ea-0242ac120002",
+    "title": "Farine de blé",
+    "description": "Farine de blé",
+    "price": "1,38 €/kg",
+    "previewImageUrl": "/product_assets/flours/wheat-flour.jpg",
+    "category": "WHEAT_FLOUR"
+  },
+  {
+    "id": "5649832c-e2b6-11ed-b5ea-0242ac120002",
+    "title": "Farine de sarrasin",
+    "description": "Farine de sarrasin",
+    "price": "1,52/kg",
+    "previewImageUrl": "/product_assets/flours/buckwheat-flour.jpg",
+    "category": "BUCKWHEAT_FLOUR"
+  },
+  {
+    "id": "5bba041c-e2b6-11ed-b5ea-0242ac120002",
+    "title": "Farine de seigle",
+    "description": "Farine de seigle",
+    "price": "1,52/kg",
+    "previewImageUrl": "/product_assets/flours/rye-flour.jpg",
+    "category": "RYE_FLOUR"
+  },
+  {
+    "id": "fc91d8f2-e8b9-11ed-a05b-0242ac120003",
+    "title": "Farine d'amande",
+    "description": "Farine d'amande",
+    "price": "2,50 €/kg",
+    "previewImageUrl": "/product_assets/flours/almond-flour.jpg",
+    "category": "ALMOND_FLOUR"
+  },
+  {
+    "id": "32a84192-e8ba-11ed-a05b-0242ac120003",
+    "title": "Farine de pois chiche",
+    "description": "Farine de pois chiche",
+    "price": "1,50 €/kg",
+    "previewImageUrl": "/product_assets/flours/chickpea-flour.jpg",
+    "category": "CHICKPEA_FLOUR"
+  },
+  {
+    "id": "b731b920-e8ba-11ed-a05b-0242ac120003",
+    "title": "Farine de coco",
+    "description": "Farine de coco",
+    "price": "1,67 €/kg",
+    "previewImageUrl": "/product_assets/flours/coconut-flour.jpg",
+    "category": "COCONUT_FLOUR"
+  },
+  {
+    "id": "d5aa0240-e8ba-11ed-a05b-0242ac120003",
+    "title": "Farine de maïs",
+    "description": "Farine de maïs",
+    "price": "1,37 €/kg",
+    "previewImageUrl": "/product_assets/flours/corn-flour.jpg",
+    "category": "CORN_FLOUR"
+  },
+  {
+    "id": "f95ae07e-e8ba-11ed-a05b-0242ac120003",
+    "title": "Farine d'avoine",
+    "description": "Farine d'avoine",
+    "price": "1,43 €/kg",
+    "previewImageUrl": "/product_assets/flours/oat-flour.jpg",
+    "category": "OAT_FLOUR"
+  },
+  {
+    "id": "20f2f62c-e8bf-11ed-a05b-0242ac120003",
+    "title": "Farine de riz",
+    "description": "Farine de riz",
+    "price": "1,37 €/kg",
+    "previewImageUrl": "/product_assets/flours/rice-flour.jpg",
+    "category": "RICE_FLOUR"
+  }
+]
