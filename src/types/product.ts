@@ -1,7 +1,3 @@
-export enum ProductCategory {
-  "FRUITS" = "FRUITS",
-}
-
 export class Product {
   id!: string;
   title!: string;
@@ -11,9 +7,15 @@ export class Product {
   category!: ProductCategory;
 }
 
+export enum ProductCategory {
+  "FRUITS" = "FRUITS",
+  "FLOURS" = "FLOURS",
+}
+
 export const productCategoryLabelMapping: Record<
   keyof typeof ProductCategory,
   string
 > = {
   [ProductCategory.FRUITS]: "Fruits",
+  [ProductCategory.FLOURS]: "Flours",
 };
