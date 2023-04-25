@@ -3,6 +3,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import {
   Drawer,
   IconButton,
+  Link,
   List,
   ListItem,
   ListItemButton,
@@ -16,8 +17,6 @@ import {
   ProductCategory,
   productCategoryLabelMapping,
 } from "src/types/product";
-
-import Link from "../../Link/Link";
 
 const menuItems = [
   {
