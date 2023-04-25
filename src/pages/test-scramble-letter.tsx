@@ -1,12 +1,9 @@
-import { Container, CircularProgress, Grid } from "@mui/material";
+import { Container } from "@mui/material";
 import type { NextPage } from "next";
+
 import AppBar from "components/ui/AppBar/AppBar";
-import useSwr from "swr";
-import ProductCardImage from "src/components/ui/Cards/ProductCardImage/ProductCardImage";
-import { Product } from "src/types/product";
 import { useSimulator } from "src/simulators";
 import { SIMULATE_EFFECT } from "src/simulators/types";
-import { shuffle } from "lodash-es";
 
 const LoremIpsumScrambledPage: NextPage = () => {
   useSimulator([SIMULATE_EFFECT.SCRAMBLE_LETTER]);

@@ -1,8 +1,9 @@
-import { Stack, Container, Fab, Link, List, Grid, Paper } from "@mui/material";
-import type { NextPage } from "next";
-import AppBar from "components/ui/AppBar/AppBar";
-import Image from "next/image";
+import { Stack, Container, Fab, Link, List, Paper } from "@mui/material";
 import { Box } from "@mui/system";
+import type { NextPage } from "next";
+import Image from "next/image";
+
+import AppBar from "components/ui/AppBar/AppBar";
 
 const Home: NextPage = () => {
   return (
