@@ -27,26 +27,22 @@ const scriptImportedFromExternalRepository = () => {
 
   const appVersion = navigator.appVersion;
 
-  let cursor: any = null,
+  let cursor: HTMLElement | null = null,
     cursorPosX = 0,
     cursorPosY = 0,
     viewportPosX = 0,
     viewportPosY = 0,
     offsetX = 0,
     offsetY = 0,
-    clickedElement: any = null;
+    clickedElement: HTMLElement | null = null;
 
   function random(min: number, max: number) {
     return Math.floor(min + Math.random() * (max - min + 1));
   }
 
-  function setStyle(
-    element: Record<string, any>,
-    style: Record<string, string>
-  ) {
-    for (const s in style) {
-      element.style[s] = style[s];
-    }
+  function setStyle(element: HTMLElement, style: Record<string, string>) {
+    element.style["left"] = style["left"];
+    element.style["top"] = style["top"];
   }
 
   function mousemoveHandler(e: MouseEvent) {
@@ -59,7 +55,8 @@ const scriptImportedFromExternalRepository = () => {
     viewportPosX = e.clientX + offsetX;
     viewportPosY = e.clientY + offsetY;
 
-    setStyle(cursor, { left: cursorPosX + "px", top: cursorPosY + "px" });
+    if (cursor)
+      setStyle(cursor, { left: cursorPosX + "px", top: cursorPosY + "px" });
   }
 
   function elementClickHandler(e: MouseEvent) {
@@ -73,7 +70,10 @@ const scriptImportedFromExternalRepository = () => {
       // Get the element that the fake cursor would click and trigger click on that element.
       e.preventDefault();
 
-      clickedElement = document.elementFromPoint(viewportPosX, viewportPosY);
+      clickedElement = document.elementFromPoint(
+        viewportPosX,
+        viewportPosY
+      ) as HTMLElement;
 
       if (clickedElement) {
         clickedElement.click();
