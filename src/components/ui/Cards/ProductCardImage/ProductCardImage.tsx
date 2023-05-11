@@ -1,8 +1,9 @@
-import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
-import { Box, Typography, Paper, IconButton } from "@mui/material";
+import { Box, Typography, Paper } from "@mui/material";
 import Image from "next/image";
 
 import { Product } from "src/types/product";
+
+import AddToCartButton from "../AddToCartButton/AddToCartButton";
 
 export interface IProductCardImage {
   product: Product;
@@ -26,9 +27,7 @@ const ProductCardImage: React.FC<IProductCardImage> = ({ product }) => {
         alignItems="center"
       >
         <Typography>{product.price}</Typography>
-        <IconButton aria-label="Add cart" color="inherit">
-          <AddShoppingCartIcon />
-        </IconButton>
+        <AddToCartButton product={product} />
       </Box>
     </Paper>
   );
