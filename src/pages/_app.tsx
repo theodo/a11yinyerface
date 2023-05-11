@@ -3,6 +3,7 @@ import "../../styles/globals.css";
 import { CacheProvider, EmotionCache } from "@emotion/react";
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from "@mui/material/styles";
+import { Provider } from "jotai";
 import { AppProps } from "next/app";
 import Head from "next/head";
 import React from "react";
@@ -21,21 +22,23 @@ interface MyAppProps extends AppProps {
 export default function MyApp(props: MyAppProps) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
   return (
-    <CacheProvider value={emotionCache}>
-      <Head>
-        <title>a11yinyerface</title>
-        <meta
-          name="description"
-          content="A worst-practice accessibility experiment"
-        />
-        <meta name="viewport" content="initial-scale=1, width=device-width" />
-      </Head>
-      <ThemeProvider theme={theme}>
-        {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-        <CssBaseline />
-        <Component {...pageProps} />
-        <ColorFiltersDefinition />
-      </ThemeProvider>
-    </CacheProvider>
+    <Provider>
+      <CacheProvider value={emotionCache}>
+        <Head>
+          <title>a11yinyerface</title>
+          <meta
+            name="description"
+            content="A worst-practice accessibility experiment"
+          />
+          <meta name="viewport" content="initial-scale=1, width=device-width" />
+        </Head>
+        <ThemeProvider theme={theme}>
+          {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+          <CssBaseline />
+          <Component {...pageProps} />
+          <ColorFiltersDefinition />
+        </ThemeProvider>
+      </CacheProvider>
+    </Provider>
   );
 }
