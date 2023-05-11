@@ -1,11 +1,20 @@
 import { Stack, Container, Fab, Link, List, Paper } from "@mui/material";
 import { Box } from "@mui/system";
+import { useAtom } from "jotai";
 import type { NextPage } from "next";
 import Image from "next/image";
+import { useEffect } from "react";
 
 import AppBar from "components/ui/AppBar/AppBar";
+import { cartAtom } from "src/store/cart";
 
 const Home: NextPage = () => {
+  const [, setCart] = useAtom(cartAtom);
+
+  useEffect(() => {
+    setCart({});
+  }, [setCart]);
+
   return (
     <>
       <AppBar />
