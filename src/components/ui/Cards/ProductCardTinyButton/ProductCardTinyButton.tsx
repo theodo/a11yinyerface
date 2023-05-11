@@ -1,8 +1,9 @@
-import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
-import { Box, Typography, Paper, IconButton } from "@mui/material";
+import { Box, Typography, Paper } from "@mui/material";
 import Image from "next/image";
 
 import { Product } from "src/types/product";
+
+import AddToCartButton from "../AddToCartButton/AddToCartButton";
 
 export interface IProductCardTinyButton {
   product: Product;
@@ -25,15 +26,7 @@ const ProductCardTinyButton: React.FC<IProductCardTinyButton> = ({
 
         <Box display="flex" justifyContent="space-between" alignItems="center">
           <Typography variant="caption">{product.price}</Typography>
-
-          <IconButton
-            aria-label="Add cart"
-            color="inherit"
-            style={{ padding: 0 }}
-            onClick={() => alert("Congrats")}
-          >
-            <AddShoppingCartIcon style={{ fontSize: "12px" }} />
-          </IconButton>
+          <AddToCartButton product={product} tiny />
         </Box>
       </Box>
     </Paper>
