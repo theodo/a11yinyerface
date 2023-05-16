@@ -35,9 +35,9 @@ const Home: NextPage = () => {
                 </div>
                 <div> Voici ce que vous devrez acheter : </div>
                 <List list-style-type="disc">
-                  <li>2 pommes</li>
-                  <li>2 oeufs</li>
-                  <li>200g de farine de blé</li>
+                  <li>1 pomme</li>
+                  <li>1 oeuf</li>
+                  <li>1 dose de farine de blé</li>
                 </List>
               </Paper>
             </Box>
