@@ -1,6 +1,6 @@
-import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
-import { IconButton } from "@mui/material";
+import { Button } from "@mui/material";
 import { useAtom } from "jotai";
+import Image from "next/image";
 
 import { cartAtom } from "src/store/cart";
 import { Product } from "src/types/product";
@@ -24,15 +24,34 @@ const AddToCartButton: React.FC<IAddToCartButton> = ({
     });
   };
 
+  const styleButton: React.CSSProperties = {
+    borderRadius: 50,
+    backgroundColor: "white",
+    textTransform: "none",
+    color: "black",
+    display: "flex",
+    flexDirection: "row",
+    gap: "10px",
+    border: "grey 1px solid",
+  };
+
+  let addImageSize = 22;
+
+  if (tiny) {
+    styleButton.fontSize = "10px";
+    addImageSize = 15;
+  }
+
   return (
-    <IconButton
-      aria-label="Add cart"
-      color="inherit"
-      style={tiny ? { padding: 0 } : {}}
-      onClick={addToCart}
-    >
-      <AddShoppingCartIcon style={tiny ? { fontSize: "12px" } : {}} />
-    </IconButton>
+    <Button aria-label="Add cart" style={styleButton} onClick={addToCart}>
+      Ajouter
+      <Image
+        src={require("public/product_assets/images/add.png")}
+        width={addImageSize}
+        height={addImageSize}
+        alt=""
+      />
+    </Button>
   );
 };
 
