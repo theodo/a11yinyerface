@@ -1,18 +1,7 @@
-import AgricultureTwoToneIcon from "@mui/icons-material/AgricultureTwoTone";
-import GrassTwoToneIcon from "@mui/icons-material/GrassTwoTone";
-import MenuIcon from "@mui/icons-material/Menu";
-import {
-  Drawer,
-  IconButton,
-  Link,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemIcon,
-  ListItemText,
-} from "@mui/material";
+import { Link, Typography } from "@mui/material";
 import { Box } from "@mui/system";
-import { useState } from "react";
+import Image from "next/image";
+import { useRouter } from "next/router";
 
 import {
   ProductCategory,
@@ -23,50 +12,90 @@ const menuItems = [
   {
     text: ProductCategory.FRUITS,
     link: "fruits",
-    icon: <AgricultureTwoToneIcon />,
+    icon: require("/public/icons/apple.svg"),
   },
   {
     text: ProductCategory.FLOURS,
     link: "flour",
-    icon: <GrassTwoToneIcon />,
+    icon: require("/public/icons/flour.svg"),
   },
 ];
 
 const Menu: React.FC = () => {
-  const [open, setOpen] = useState(false);
+  const { pathname } = useRouter();
 
   return (
     <>
-      <IconButton
-        size="large"
-        edge="start"
-        color="inherit"
-        aria-label="menu"
-        sx={{ mr: 2 }}
-        onClick={() => setOpen(true)}
+      <Box
+        display="flex"
+        flex="1"
+        sx={{ margin: "30px 25px" }}
+        justifyContent="space-between"
       >
-        <MenuIcon />
-      </IconButton>
-      <Drawer anchor="left" open={open} onClose={() => setOpen(false)}>
-        <Box width={250}>
-          <List>
-            {menuItems.map(({ text, link, icon }) => (
-              <ListItem
-                key={text}
-                disablePadding
-                component={Link}
-                href={link}
-                onClick={() => setOpen(false)}
-              >
-                <ListItemButton>
-                  <ListItemIcon>{icon}</ListItemIcon>
-                  <ListItemText primary={productCategoryLabelMapping[text]} />
-                </ListItemButton>
-              </ListItem>
-            ))}
-          </List>
+        <Image
+          src={require("/public/icons/logo.svg")}
+          alt=""
+          role="presentation"
+          width={160}
+          height={55}
+        />
+        <Box display="flex" gap={5}>
+          {menuItems.map(({ text, link, icon }) => (
+            <Link
+              key={text}
+              href={link}
+              underline="none"
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                gap: 1,
+                opacity: pathname === `/${link}` ? 1 : 0.5,
+                ":hover": {
+                  opacity: 1,
+                },
+              }}
+            >
+              <Image
+                src={icon}
+                alt=""
+                role="presentation"
+                width={23}
+                height={23}
+              />
+              <Typography fontWeight="bold">
+                {productCategoryLabelMapping[text]}
+              </Typography>
+              {pathname === `/${link}` && (
+                <Image src={require("/public/icons/dot.svg")} alt=""></Image>
+              )}
+            </Link>
+          ))}
+          <Link
+            key="Panier"
+            href="cart"
+            underline="none"
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              gap: 1,
+              backgroundColor: "primary.main",
+              color: "white",
+              padding: "10px 20px",
+              borderRadius: "75px",
+              ":hover": {
+                backgroundColor: "primary.dark",
+              },
+            }}
+          >
+            <Typography fontWeight="bold">Panier</Typography>
+            <Image
+              src={require("/public/icons/white-cart.svg")}
+              alt=""
+              role="presentation"
+            ></Image>
+          </Link>
         </Box>
-      </Drawer>
+      </Box>
     </>
   );
 };

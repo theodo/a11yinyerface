@@ -16,6 +16,6 @@ export const productCategoryLabelMapping: Record<
   keyof typeof ProductCategory,
   string
 > = {
-  [ProductCategory.FRUITS]: "Fruits",
-  [ProductCategory.FLOURS]: "Farine",
+  [ProductCategory.FRUITS]: "FRUITS",
+  [ProductCategory.FLOURS]: "FARINE",
 };
