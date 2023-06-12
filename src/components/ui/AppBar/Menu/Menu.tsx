@@ -1,8 +1,10 @@
 import { Link, Typography } from "@mui/material";
 import { Box } from "@mui/system";
+import { useAtom } from "jotai";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
+import { CartStoreItem, cartAtom } from "src/store/cart";
 import {
   ProductCategory,
   productCategoryLabelMapping,
@@ -23,6 +25,13 @@ const menuItems = [
 
 const Menu: React.FC = () => {
   const { pathname } = useRouter();
+  const [cart] = useAtom<CartStoreItem>(cartAtom);
+
+  const cartItemsCount = () => {
+    return Object.values(cart).reduce((acc, { quantity }) => {
+      return acc + quantity;
+    }, 0);
+  };
 
   return (
     <>
@@ -85,6 +94,7 @@ const Menu: React.FC = () => {
               ":hover": {
                 backgroundColor: "primary.dark",
               },
+              position: "relative",
             }}
           >
             <Typography fontWeight="bold">Panier</Typography>
@@ -93,6 +103,28 @@ const Menu: React.FC = () => {
               alt=""
               role="presentation"
             ></Image>
+            {cartItemsCount() > 0 && (
+              <Typography
+                fontSize={12}
+                sx={{
+                  width: "28px",
+                  height: "28px",
+                  backgroundColor: "secondary.main",
+                  color: "primary.main",
+                  padding: "0px 5px",
+                  border: "2px solid",
+                  borderRadius: "100px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  position: "absolute",
+                  bottom: "-12px",
+                  right: "0",
+                }}
+              >
+                {cartItemsCount()}
+              </Typography>
+            )}
           </Link>
         </Box>
       </Box>

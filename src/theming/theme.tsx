@@ -1,4 +1,3 @@
-import { blueGrey } from "@mui/material/colors";
 import { createTheme } from "@mui/material/styles";
 
 // Create a theme instance.
@@ -8,7 +7,7 @@ const theme = createTheme({
       main: "#1E45CF",
     },
     secondary: {
-      main: blueGrey[700],
+      main: "#D2DAF5",
     },
   },
   typography: {
