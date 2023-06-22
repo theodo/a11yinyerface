@@ -1,4 +1,4 @@
-import { Stack, Container, Fab, Link, List, Paper } from "@mui/material";
+import { Stack, Container, List, Paper } from "@mui/material";
 import { Box } from "@mui/system";
 import { useAtom } from "jotai";
 import type { NextPage } from "next";
@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useEffect } from "react";
 
 import AppBar from "components/ui/AppBar/AppBar";
+import AppLink from "src/components/ui/Buttons/AppLink";
 import { cartAtom } from "src/store/cart";
 
 const Home: NextPage = () => {
@@ -54,12 +55,7 @@ const Home: NextPage = () => {
               </Paper>
             </Box>
           </Stack>
-
-          <Link href="/fruits">
-            <Fab color="secondary" variant="extended" size="large">
-              Je démarre mes courses
-            </Fab>
-          </Link>
+          <AppLink text="Commencer l'expérience" link="/fruits" />
         </Stack>
       </Container>
     </>
