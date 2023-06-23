@@ -19,7 +19,7 @@
     "id": "5649832c-e2b6-11ed-b5ea-0242ac120002",
     "title": "Farine de sarrasin",
     "description": "Farine de sarrasin",
-    "price": "1,52/kg",
+    "price": "1,52 €/kg",
     "previewImageUrl": "/product_assets/flours/buckwheat-flour.jpg",
     "category": "BUCKWHEAT_FLOUR"
   },
@@ -27,7 +27,7 @@
     "id": "5bba041c-e2b6-11ed-b5ea-0242ac120002",
     "title": "Farine de seigle",
     "description": "Farine de seigle",
-    "price": "1,52/kg",
+    "price": "1,52 €/kg",
     "previewImageUrl": "/product_assets/flours/rye-flour.jpg",
     "category": "RYE_FLOUR"
   },
