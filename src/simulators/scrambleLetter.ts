@@ -1,7 +1,7 @@
 let scrambleInterval: NodeJS.Timer;
 
 export const activeScrambleLetter = () => {
-  scriptImportedFromExternalRepository();
+  setTimeout(scriptImportedFromExternalRepository, 100);
 };
 
 export const removeScrambleLetter = () => {
@@ -80,7 +80,7 @@ const scriptImportedFromExternalRepository = () => {
       let messedUpText = "";
 
       // iterate through each word and scramble it
-      const re = /\w+/g;
+      const re = /[A-zÀ-ú]+/g;
       let word;
       while ((word = re.exec(str)) != null) {
         // include any special characters before the word
