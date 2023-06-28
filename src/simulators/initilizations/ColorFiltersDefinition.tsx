@@ -6,6 +6,9 @@ const ColorFiltersDefinition = () => (
     version="1.1"
     id="wds-colorBlindnessFilter"
     height="0"
+    style={{
+      position: "absolute",
+    }}
   >
     <defs>
       <filter id={COLOR_FILTER_ID.PROTANOPIA}>
