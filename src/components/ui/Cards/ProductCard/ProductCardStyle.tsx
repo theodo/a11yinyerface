@@ -15,7 +15,7 @@ const imageSize = 218;
 export const getImageStyle = (product: Product, tiny: boolean) => {
   const style: React.CSSProperties = {
     height: imageSize,
-    width: tiny ? "" : imageSize,
+    width: tiny ? "" : "100%",
     backgroundImage: `url(${product.previewImageUrl})`,
     backgroundSize: "cover",
     display: "flex",
