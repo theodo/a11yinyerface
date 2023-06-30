@@ -1,32 +1,39 @@
 import { Typography, Paper, Box } from "@mui/material";
-import Image from "next/image";
 
 import { Product } from "src/types/product";
 
+import { getImageStyle, stylePrice } from "./ProductCardStyle";
 import AddToCartButton from "../AddToCartButton/AddToCartButton";
 
 export interface IProductCard {
   product: Product;
+  tiny?: boolean;
 }
 
-const ProductCard: React.FC<IProductCard> = ({ product }) => {
+const ProductCard: React.FC<IProductCard> = ({ product, tiny = false }) => {
   return (
     <Paper>
-      <Image
-        alt={product.title}
-        src={product.previewImageUrl}
-        width={218}
-        height={218}
-        layout="responsive"
-      />
-      <Box paddingX={2} paddingY={1}>
-        <Typography>{product.title}</Typography>
-
-        <Box display="flex" justifyContent="space-between" alignItems="center">
-          <Typography variant="caption">{product.price}</Typography>
-          <AddToCartButton product={product} />
+      <Box style={getImageStyle(product, tiny)}>
+        <Box
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            width: "100%",
+            padding: "5px",
+          }}
+        >
+          <Typography style={stylePrice}>{product.price}</Typography>
+          <AddToCartButton product={product} tiny={tiny} />
         </Box>
       </Box>
+      <Typography
+        style={{
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        {product.title}
+      </Typography>
     </Paper>
   );
 };

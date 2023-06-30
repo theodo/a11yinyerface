@@ -5,7 +5,7 @@ import AppBar from "components/ui/AppBar/AppBar";
 import ProductCardImage from "src/components/ui/Cards/ProductCardImage/ProductCardImage";
 import { Product } from "src/types/product";
 
-import ProductCardTinyButton from "../Cards/ProductCardTinyButton/ProductCardTinyButton";
+import ProductCard from "../Cards/ProductCard/ProductCard";
 
 export interface IPageGridTemplate {
   data: Product[] | undefined;
@@ -20,6 +20,7 @@ interface IGetProductCardElement {
 
 export enum ProductCardTypeEnum {
   Image,
+  Text,
   TinyButton,
 }
 
@@ -30,8 +31,10 @@ const getProductCardElement = ({
   switch (productCardType) {
     case ProductCardTypeEnum.Image:
       return <ProductCardImage product={product} />;
+    case ProductCardTypeEnum.Text:
+      return <ProductCard product={product} />;
     case ProductCardTypeEnum.TinyButton:
-      return <ProductCardTinyButton product={product} />;
+      return <ProductCard product={product} tiny={true} />;
     default:
       return <ProductCardImage product={product} />;
   }

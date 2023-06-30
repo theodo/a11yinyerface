@@ -21,6 +21,11 @@ const menuItems = [
     link: "flour",
     icon: require("/public/icons/flour.svg"),
   },
+  {
+    text: ProductCategory.DAIRY_COFFEE_EGG,
+    link: "egg",
+    icon: require("/public/icons/egg.svg"),
+  },
 ];
 
 const Menu: React.FC = () => {
