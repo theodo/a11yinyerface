@@ -26,10 +26,7 @@ const AppLink: React.FC<IAppLink> = ({ text, link }) => {
       }}
     >
       {text}
-      <Image
-        src={require("public/product_assets/images/white-arrow.svg")}
-        alt=""
-      />
+      <Image src={require("public/icons/white-arrow.svg")} alt="" />
     </Link>
   );
 };

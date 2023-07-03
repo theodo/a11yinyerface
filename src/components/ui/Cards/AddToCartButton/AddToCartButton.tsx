@@ -46,7 +46,7 @@ const AddToCartButton: React.FC<IAddToCartButton> = ({
     <Button aria-label="Add cart" style={styleButton} onClick={addToCart}>
       Ajouter
       <Image
-        src={require("public/product_assets/images/add.png")}
+        src={require("public/icons/add.png")}
         width={addImageSize}
         height={addImageSize}
         alt=""

@@ -52,7 +52,7 @@ a {
 
 .wds-img-element.wds-img-animation-0 {
   display: block !important;
-  background-image: url("../public/product_assets/images/burger.png") !important;
+  background-image: url("/images/burger.png") !important;
   animation: move 5s infinite !important;
 }
 
