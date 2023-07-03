@@ -94,11 +94,11 @@ const scriptImportedFromExternalRepository = () => {
   }
 
   const texts = [
-    "Did I eat lunch?",
-    "I have to get back to work soon...",
-    "The ventilation sounds a lot today. bzzzzzz",
-    "Should I answer that text message?",
-    "Must concentrate, must concentrate, must concentrate",
+    "J'ai mangé ce midi ?",
+    "Je dois retourner travailler...",
+    "La ventilation fait beaucoup de bruit aujourd'hui. bzzzzzz",
+    "Est-ce que je devrais répondre à ce message ?",
+    "Je dois me concentrer, me concentrer, me concentrer",
   ];
 
   texts.forEach(createTextElements);
@@ -140,11 +140,11 @@ const scriptImportedFromExternalRepository = () => {
     TIMEOUTS.setTimeout(() => {
       removeClass(textEl_4, textAnimation_4);
       TIMEOUTS.clearAllTimeouts();
-    }, 32000);
+    }, 36000);
   }
 
   launchAnimations();
-  distractionIntervale = setInterval(launchAnimations, 32000);
+  distractionIntervale = setInterval(launchAnimations, 36000);
 };
 
 export const removeDistractions = () => {
