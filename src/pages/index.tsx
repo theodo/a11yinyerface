@@ -35,10 +35,7 @@ const Home: NextPage = () => {
           marginTop="5em"
         >
           <Stack direction="row" justifyContent="space-around" spacing="5em">
-            <Image
-              src={require("../../public/product_assets/images/apple-pie.jpeg")}
-              alt=""
-            />
+            <Image src={require("../../public/images/apple-pie.jpeg")} alt="" />
 
             <Box sx={{ display: "flex", alignItems: "center" }}>
               <Paper sx={{ padding: "1em", border: "solid" }}>
