@@ -38,3 +38,5 @@ yarn-error.log*
 
 # devX
 .idea
+
+next-env.d.ts
