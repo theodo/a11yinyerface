@@ -6,6 +6,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import { Provider } from "jotai";
 import { AppProps } from "next/app";
 import Head from "next/head";
+import { appWithTranslation } from "next-i18next";
 import React from "react";
 
 import ColorFiltersDefinition from "src/simulators/initilizations/ColorFiltersDefinition";
@@ -19,7 +20,7 @@ interface MyAppProps extends AppProps {
   emotionCache?: EmotionCache;
 }
 
-export default function MyApp(props: MyAppProps) {
+function MyApp(props: MyAppProps) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
   return (
     <Provider>
@@ -42,3 +43,5 @@ export default function MyApp(props: MyAppProps) {
     </Provider>
   );
 }
+
+export default appWithTranslation(MyApp);
