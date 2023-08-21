@@ -1,97 +1,97 @@
 [
   {
     "id": "709ac8fe-db4b-4a53-8878-37e2c1153465",
-    "title": "Orange",
-    "description": "Sed accumsan felis.",
-    "price": "5.23€ pièce",
+    "title": "orange.title",
+    "description": "orange.description",
+    "price": "orange.price",
     "previewImageUrl": "/product_assets/fruits/fruit_orange.jpeg",
     "category": "FRUITS"
   },
   {
     "id": "fe989f52-2bfe-4a6d-b972-57905279e21c",
-    "title": "Pomme",
-    "description": "Tarragon - Primerba, Paste",
-    "price": "3.99€ pièce",
+    "title": "apple.title",
+    "description": "apple.description",
+    "price": "apple.price",
     "previewImageUrl": "/product_assets/fruits/fruit_apple_red.jpeg",
     "category": "FRUITS"
   },
   {
     "id": "a05be71b-810d-4d73-af15-c2be4d04fc39",
-    "title": "Pêche",
-    "description": "Consectetur nulla eiusmod magna ullamco est",
-    "price": "1.32€ pièce",
+    "title": "peach.title",
+    "description": "peach.description",
+    "price": "peach.price",
     "previewImageUrl": "/product_assets/fruits/fruit_peach.jpeg",
     "category": "FRUITS"
   },
   {
     "id": "fc0ac67e-40cb-4cf4-8126-be816a4e5b52",
-    "title": "Abricot",
-    "description": "irure fugiat excepteur nostrud id elit ipsum. ",
-    "price": "2.99€ pièce",
+    "title": "abricot.title",
+    "description": "abricot.description",
+    "price": "abricot.price",
     "previewImageUrl": "/product_assets/fruits/fruit_apricot.jpeg",
     "category": "FRUITS"
   },
   {
     "id": "724ebd76-70ea-45d6-bcc2-6184c09395be",
-    "title": "Prune",
-    "description": "Culpa ex proident cillum amet sit ipsum. Est ",
-    "price": "1.23€ pièce",
+    "title": "plum.title",
+    "description": "plum.description",
+    "price": "plum.price",
     "previewImageUrl": "/product_assets/fruits/fruit_plum.jpeg",
     "category": "FRUITS"
   },
   {
     "id": "1c91b914-22e3-44fd-ba4c-b4a8ec4e868f",
-    "title": "Poire",
-    "description": "eu nostrud magna adipisicing duis et id.",
-    "price": "2.56€ pièce",
+    "title": "pear.title",
+    "description": "pear.description",
+    "price": "pear.price",
     "previewImageUrl": "/product_assets/fruits/fruit_pear.jpeg",
     "category": "FRUITS"
   },
   {
     "id": "efda0750-f31e-11ed-a05b-0242ac120003",
-    "title": "Kiwi",
-    "description": "eu nostrud magna adipisicing duis et id.",
-    "price": "1.73€ pièce",
+    "title": "kiwi.title",
+    "description": "kiwi.description",
+    "price": "kiwi.price",
     "previewImageUrl": "/product_assets/fruits/fruit_kiwi.jpeg",
     "category": "FRUITS"
   },
   {
     "id": "115913f8-f31f-11ed-a05b-0242ac120003",
-    "title": "Fruit de la passion",
-    "description": "eu nostrud magna adipisicing duis et id.",
-    "price": "5.27€ pièce",
+    "title": "passion-fruit.title",
+    "description": "passion-fruit.description",
+    "price": "passion-fruit.price",
     "previewImageUrl": "/product_assets/fruits/fruit_passion.jpeg",
     "category": "FRUITS"
   },
   {
     "id": "30405560-f31f-11ed-a05b-0242ac120003",
-    "title": "Grenade",
-    "description": "eu nostrud magna adipisicing duis et id.",
-    "price": "7.23€ pièce",
+    "title": "pomegranate.title",
+    "description": "pomegranate.description",
+    "price": "pomegranate.price",
     "previewImageUrl": "/product_assets/fruits/fruit_pomegranate.jpg",
     "category": "FRUITS"
   },
   {
     "id": "11a283ee-f3d3-11ed-a05b-0242ac120003",
-    "title": "Raisin",
-    "description": "eu nostrud magna adipisicing duis et id.",
-    "price": "0.13€ pièce",
+    "title": "grape.title",
+    "description": "grape.description",
+    "price": "grape.price",
     "previewImageUrl": "/product_assets/fruits/fruit_grape.jpg",
     "category": "FRUITS"
   },
   {
     "id": "40995420-f3d3-11ed-a05b-0242ac120003",
-    "title": "Mangue",
-    "description": "eu nostrud magna adipisicing duis et id.",
-    "price": "8.02€ pièce",
+    "title": "mango.title",
+    "description": "mango.description",
+    "price": "mango.price",
     "previewImageUrl": "/product_assets/fruits/fruit_mango.jpeg",
     "category": "FRUITS"
   },
   {
     "id": "90bb8220-f3d3-11ed-a05b-0242ac120003",
-    "title": "Tomate",
-    "description": "eu nostrud magna adipisicing duis et id.",
-    "price": "1.02€ pièce",
+    "title": "tomato.title",
+    "description": "tomato.description",
+    "price": "tomato.price",
     "previewImageUrl": "/product_assets/fruits/fruit_tomato.jpg",
     "category": "FRUITS"
   }

@@ -1,6 +1,7 @@
 import { Button } from "@mui/material";
 import { useAtom } from "jotai";
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
 
 import { cartAtom } from "src/store/cart";
 import { Product } from "src/types/product";
@@ -15,6 +16,8 @@ const AddToCartButton: React.FC<IAddToCartButton> = ({
   tiny = false,
 }) => {
   const [cart, setCart] = useAtom(cartAtom);
+
+  const { t } = useTranslation();
 
   const addToCart = () => {
     const cartItem = cart[product.id] ?? { product, quantity: 0 };
@@ -44,7 +47,7 @@ const AddToCartButton: React.FC<IAddToCartButton> = ({
 
   return (
     <Button aria-label="Add cart" style={styleButton} onClick={addToCart}>
-      Ajouter
+      {t("cards.add-button")}
       <Image
         src={require("public/icons/add.png")}
         width={addImageSize}

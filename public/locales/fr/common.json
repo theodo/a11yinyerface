@@ -25,5 +25,8 @@
   },
   "app-bar": {
     "cart-button": "Panier"
+  },
+  "cards": {
+    "add-button": "Ajouter"
   }
 }

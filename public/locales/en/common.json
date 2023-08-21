@@ -25,5 +25,8 @@
   },
   "app-bar": {
     "cart-button": "Cart"
+  },
+  "cards": {
+    "add-button": "Add"
   }
 }
