@@ -1,0 +1,52 @@
+{
+  "spelt": {
+    "title": "Farine d'épeautre",
+    "description": "Farine d'épeautre ",
+    "price": "1,23 €/kg"
+  },
+  "wheat": {
+    "title": "Farine de blé",
+    "description": "Farine de blé",
+    "price": "1,38 €/kg"
+  },
+  "buckwheat": {
+    "title": "Farine de sarrasin",
+    "description": "Farine de sarrasin",
+    "price": "1,52 €/kg"
+  },
+  "rye": {
+    "title": "Farine de seigle",
+    "description": "Farine de seigle",
+    "price": "1,52 €/kg"
+  },
+  "almond": {
+    "title": "Farine d'amande",
+    "description": "Farine d'amande",
+    "price": "2,50 €/kg"
+  },
+  "chickpea": {
+    "title": "Farine de pois chiche",
+    "description": "Farine de pois chiche",
+    "price": "1,50 €/kg"
+  },
+  "coconut": {
+    "title": "Farine de coco",
+    "description": "Farine de coco",
+    "price": "1,67 €/kg"
+  },
+  "corn": {
+    "title": "Farine de maïs",
+    "description": "Farine de maïs",
+    "price": "1,37 €/kg"
+  },
+  "oat": {
+    "title": "Farine d'avoine",
+    "description": "Farine d'avoine",
+    "price": "1,43 €/kg"
+  },
+  "rice": {
+    "title": "Farine de riz",
+    "description": "Farine de riz",
+    "price": "1,37 €/kg"
+  }
+}

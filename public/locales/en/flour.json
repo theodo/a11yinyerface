@@ -1,0 +1,52 @@
+{
+  "spelt": {
+    "title": "Spelt flour",
+    "description": "Spelt flour",
+    "price": "1,23 $/kg"
+  },
+  "wheat": {
+    "title": "Wheat flour",
+    "description": "Wheat flour",
+    "price": "1,38 $/kg"
+  },
+  "buckwheat": {
+    "title": "Buckwheat flour",
+    "description": "Buckwheat flour",
+    "price": "1,52 $/kg"
+  },
+  "rye": {
+    "title": "Rye flour",
+    "description": "Rye flour",
+    "price": "1,52 $/kg"
+  },
+  "almond": {
+    "title": "Almond flour",
+    "description": "Almond flour",
+    "price": "2,50 $/kg"
+  },
+  "chickpea": {
+    "title": "Chickpea flour",
+    "description": "Chickpea flour",
+    "price": "1,50 $/kg"
+  },
+  "coconut": {
+    "title": "Coconut flour",
+    "description": "Coconut flour",
+    "price": "1,67 $/kg"
+  },
+  "corn": {
+    "title": "Corn flour",
+    "description": "Corn flour",
+    "price": "1,37 $/kg"
+  },
+  "oat": {
+    "title": "Oat flour",
+    "description": "Oat flour",
+    "price": "1,43 $/kg"
+  },
+  "rice": {
+    "title": "Rice flour",
+    "description": "Rice flour",
+    "price": "1,37 $/kg"
+  }
+}
