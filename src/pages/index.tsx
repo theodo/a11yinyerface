@@ -2,6 +2,8 @@ import { Stack, Container, Typography, Box } from "@mui/material";
 import { useAtom } from "jotai";
 import type { NextPage } from "next";
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useEffect } from "react";
 
 import AppLink from "src/components/ui/Buttons/AppLink";
@@ -9,8 +11,11 @@ import ObjectiveCard from "src/components/ui/Cards/ObjectiveCard/ObjectiveCard";
 import PageTextTemplate from "src/components/ui/PageTextTemplate/PageTextTemplate";
 import { cartAtom } from "src/store/cart";
 
+import { StaticProps } from "./_app";
+
 const Home: NextPage = () => {
   const [, setCart] = useAtom(cartAtom);
+  const { t } = useTranslation();
 
   useEffect(() => {
     setCart({});
@@ -20,20 +25,18 @@ const Home: NextPage = () => {
 
   const presentationText = (
     <Typography>
-      A11Y INYERFACE est un projet visant à vous faire{" "}
+      {t("project-name")} {t("intro-page.sentence.intro")}{" "}
       <Box component="span" sx={emphasisStyle}>
-        vivre l&apos;expérience de personas handicapés{" "}
+        {t("intro-page.sentence.experience")}{" "}
       </Box>
-      grâce à des simulations interactives. En vous mettant dans leur peau, vous
-      découvrirez{" "}
+      {t("intro-page.sentence.in-shoe")}{" "}
       <Box component="span" sx={emphasisStyle}>
-        les défis auxquels ils sont confrontés au quotidien.{" "}
+        {t("intro-page.sentence.daily-challenge")}{" "}
       </Box>{" "}
-      Notre objectif est de{" "}
+      {t("intro-page.sentence.goal")}{" "}
       <Box component="span" sx={emphasisStyle}>
-        sensibiliser à l&apos;importance de l&apos;accessibilité pour un web
-        plus inclusif.
-      </Box>{" "}
+        {t("intro-page.sentence.sensibilize")}{" "}
+      </Box>
     </Typography>
   );
 
@@ -63,7 +66,7 @@ const Home: NextPage = () => {
           />
           <ObjectiveCard />
         </Stack>
-        <AppLink text="Commencer l'expérience" link="/fruits" />
+        <AppLink text={t("intro-page.start")} link="/fruits" />
       </Stack>
     </Container>
   );
@@ -72,3 +75,11 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+export async function getStaticProps({ locale }: StaticProps) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+    },
+  };
+}

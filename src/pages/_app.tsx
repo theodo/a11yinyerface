@@ -45,3 +45,7 @@ function MyApp(props: MyAppProps) {
 }
 
 export default appWithTranslation(MyApp);
+
+export interface StaticProps {
+  locale: string;
+}
