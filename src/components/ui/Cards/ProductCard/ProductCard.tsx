@@ -1,4 +1,5 @@
 import { Typography, Paper, Box } from "@mui/material";
+import { useTranslation } from "next-i18next";
 
 import { Product } from "src/types/product";
 
@@ -8,9 +9,16 @@ import AddToCartButton from "../AddToCartButton/AddToCartButton";
 export interface IProductCard {
   product: Product;
   tiny?: boolean;
+  translationFile?: string;
 }
 
-const ProductCard: React.FC<IProductCard> = ({ product, tiny = false }) => {
+const ProductCard: React.FC<IProductCard> = ({
+  product,
+  tiny = false,
+  translationFile = "common",
+}) => {
+  const { t } = useTranslation(translationFile);
+
   return (
     <Paper>
       <Box style={getImageStyle(product, tiny)}>
@@ -22,7 +30,7 @@ const ProductCard: React.FC<IProductCard> = ({ product, tiny = false }) => {
             padding: "5px",
           }}
         >
-          <Typography style={stylePrice}>{product.price}</Typography>
+          <Typography style={stylePrice}>{t(product.price)}</Typography>
           <AddToCartButton product={product} tiny={tiny} />
         </Box>
       </Box>
@@ -32,7 +40,7 @@ const ProductCard: React.FC<IProductCard> = ({ product, tiny = false }) => {
           justifyContent: "center",
         }}
       >
-        {product.title}
+        {t(product.title)}
       </Typography>
     </Paper>
   );
