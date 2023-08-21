@@ -1,0 +1,14 @@
+{
+  "project-name": "A11Y INYERFACE",
+  "intro-page": {
+    "sentence": {
+      "intro": " est un projet visant à vous faire",
+      "experience": "vivre l'expérience de personas handicapées",
+      "in-shoe": "grâce à des simulations interactives. En vous mettant dans leur peau, vous découvrirez",
+      "daily-challenge": "les défis auxquels ils sont confrontés au quotidien.",
+      "goal": "Notre objectif est de",
+      "sensibilize": "sensibiliser à l'importance de l'accessibilité pour un web plus inclusif."
+    },
+    "start": "Commencer l'expérience"
+  }
+}

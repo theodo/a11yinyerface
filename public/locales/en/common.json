@@ -1,0 +1,14 @@
+{
+  "project-name": "A11Y INYERFACE",
+  "intro-page": {
+    "sentence": {
+      "intro": " is a project designed to let you",
+      "experience": "live the experience of disabled personas",
+      "in-shoe": "through interactive simulations. By putting yourself in their shoes, you will discover",
+      "daily-challenge": "the daily challenges they encounter.",
+      "goal": "Our goal is to",
+      "sensibilize": "sensibilize to the importance of accessibility for a more inclusive web."
+    },
+    "start": "Start the experience"
+  }
+}
