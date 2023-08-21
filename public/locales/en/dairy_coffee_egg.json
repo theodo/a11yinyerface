@@ -1,0 +1,87 @@
+{
+  "cheddar": {
+    "title": "Cheddar",
+    "description": "Cillum in laborum eu sint.",
+    "price": "2.42$ each"
+  },
+  "butter": {
+    "title": "Butter",
+    "description": "Ipsum velit officia officia eiusmod commodo tempor.",
+    "price": "1.69$ each"
+  },
+  "coffee-beans": {
+    "title": "Coffe beans",
+    "description": "Proident ea voluptate veniam nulla duis fugiat veniam.",
+    "price": "1.22$ each"
+  },
+  "coffee-capsule": {
+    "title": "Coffee capsule",
+    "description": "Exercitation nostrud nisi labore id occaecat quis nulla.",
+    "price": "3.21$ each"
+  },
+  "coffee-paper-filter": {
+    "title": "Coffee paper filter",
+    "description": "Laborum laboris dolore eiusmod sint dolor eiusmod cillum.",
+    "price": "4.11$ each"
+  },
+  "coffee-powder": {
+    "title": "Coffee powder",
+    "description": "Eiusmod dolore elit cillum ex sint sunt irure laborum.",
+    "price": "1.21$ each"
+  },
+  "condensed-milk": {
+    "title": "Condensed milk",
+    "description": "Elit ex in aliqua magna ut voluptate labore ullamco dolor voluptate in ex.",
+    "price": "1.61$ each"
+  },
+  "cream": {
+    "title": "Cream",
+    "description": "Excepteur mollit enim et dolore ipsum eu non reprehenderit.",
+    "price": "1.36$ each"
+  },
+  "ghee": {
+    "title": "Ghee",
+    "description": "Consectetur excepteur sit id enim deserunt laborum officia.",
+    "price": "2.57$ each"
+  },
+  "ice-cream": {
+    "title": "Ice cream",
+    "description": "Aliquip id esse dolor ad adipisicing labore cillum sint est irure.",
+    "price": "3.91$ each"
+  },
+  "milk": {
+    "title": "Milk",
+    "description": "Laborum sint laboris consectetur officia.",
+    "price": "7.23$ each"
+  },
+  "parmesan-cheese": {
+    "title": "Parmesan",
+    "description": "Deserunt voluptate dolor est quis aute.",
+    "price": "1.91$ each"
+  },
+  "powdered-milk": {
+    "title": "Powdered milk",
+    "description": "Excepteur eu anim consequat irure cillum fugiat nostrud.",
+    "price": "3.97$ each"
+  },
+  "soft-cheese": {
+    "title": "Soft cheese",
+    "description": "Aute sit officia duis excepteur.",
+    "price": "1.04$ each"
+  },
+  "swiss-cheese": {
+    "title": "Swiss cheese",
+    "description": "Occaecat ex consequat qui nulla sint proident do elit.",
+    "price": "1.73$ each"
+  },
+  "yoghurt": {
+    "title": "Yoghurt",
+    "description": "Pariatur dolore amet cupidatat eiusmod pariatur officia.",
+    "price": "3.18$ each"
+  },
+  "egg": {
+    "title": "Egg",
+    "description": "Pariatur dolore amet cupidatat eiusmod pariatur officia.",
+    "price": "0,5$ each"
+  }
+}
