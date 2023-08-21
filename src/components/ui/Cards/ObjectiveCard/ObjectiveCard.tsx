@@ -1,7 +1,9 @@
 import { Typography, Paper, Box } from "@mui/material";
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
 
 const ObjectiveCard: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <Paper
       sx={{
@@ -20,7 +22,7 @@ const ObjectiveCard: React.FC = () => {
       <Typography
         sx={{ color: "primary.main", fontWeight: "800", fontSize: "28px" }}
       >
-        Objectif
+        {t("objective-card.title")}
       </Typography>
 
       <Box
@@ -33,23 +35,27 @@ const ObjectiveCard: React.FC = () => {
           variant="caption"
           sx={{ fontSize: "16px", lineHeight: "130%", margin: "25px 0" }}
         >
-          Vous devez faire vos courses pour cuisiner un gâteau aux pommes. Voici
-          ce que vous devrez acheter :
+          {t("objective-card.description")}
         </Typography>
 
         <Box sx={{ display: "flex", gap: "5px", flexDirection: "column" }}>
           <Box sx={{ display: "flex", gap: "7px" }}>
             <Image src={require("/public/icons/apple.svg")} alt="" />
-            <Typography sx={{ color: "primary.main" }}>1 pomme</Typography>
+            <Typography sx={{ color: "primary.main" }}>
+              {t("objective-card.apple")}
+            </Typography>
           </Box>
           <Box sx={{ display: "flex", gap: "7px" }}>
             <Image src={require("/public/icons/egg.svg")} alt="" />
-            <Typography sx={{ color: "primary.main" }}>1 oeuf</Typography>
+            <Typography sx={{ color: "primary.main" }}>
+              {" "}
+              {t("objective-card.egg")}
+            </Typography>
           </Box>
           <Box sx={{ display: "flex", gap: "7px" }}>
             <Image src={require("/public/icons/flour.svg")} alt="" />
             <Typography sx={{ color: "primary.main" }}>
-              1 dose de farine de blé
+              {t("objective-card.flour")}
             </Typography>
           </Box>
         </Box>

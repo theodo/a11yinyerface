@@ -10,5 +10,12 @@
       "sensibilize": "sensibiliser à l'importance de l'accessibilité pour un web plus inclusif."
     },
     "start": "Commencer l'expérience"
+  },
+  "objective-card": {
+    "title": "Objectif",
+    "description": "Vous devez faire vos courses pour cuisiner un gâteau aux pommes. Voici ce que vous devrez acheter :",
+    "apple": "1 pomme",
+    "egg": "1 oeuf",
+    "flour": "1 dose de farine de blé"
   }
 }
