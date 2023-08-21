@@ -11,12 +11,19 @@
     },
     "start": "Start the experience"
   },
-
   "objective-card": {
     "title": "Goal",
     "description": "You need to go shopping to bake an apple cake. Here is what you will need to buy:",
     "apple": "1 apple",
     "egg": "1 egg",
     "flour": "1 dose of wheat flour"
+  },
+  "product-category": {
+    "fruit": "Fruit",
+    "flour": "Flour",
+    "dairy-coffee-egg": "Egg"
+  },
+  "app-bar": {
+    "cart-button": "Cart"
   }
 }
