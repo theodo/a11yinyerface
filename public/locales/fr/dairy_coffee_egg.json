@@ -1,0 +1,87 @@
+{
+  "cheddar": {
+    "title": "Cheddar",
+    "description": "Cillum in laborum eu sint.",
+    "price": "2.42€ pièce"
+  },
+  "butter": {
+    "title": "Beurre",
+    "description": "Ipsum velit officia officia eiusmod commodo tempor.",
+    "price": "1.69€ pièce"
+  },
+  "coffee-beans": {
+    "title": "Graines de café",
+    "description": "Proident ea voluptate veniam nulla duis fugiat veniam.",
+    "price": "1.22€ pièce"
+  },
+  "coffee-capsule": {
+    "title": "Capsule de café",
+    "description": "Exercitation nostrud nisi labore id occaecat quis nulla.",
+    "price": "3.21€ pièce"
+  },
+  "coffee-paper-filter": {
+    "title": "Papier filtre",
+    "description": "Laborum laboris dolore eiusmod sint dolor eiusmod cillum.",
+    "price": "4.11€ pièce"
+  },
+  "coffee-powder": {
+    "title": "Café broyé",
+    "description": "Eiusmod dolore elit cillum ex sint sunt irure laborum.",
+    "price": "1.21€ pièce"
+  },
+  "condensed-milk": {
+    "title": "Lait concentré",
+    "description": "Elit ex in aliqua magna ut voluptate labore ullamco dolor voluptate in ex.",
+    "price": "1.61€ pièce"
+  },
+  "cream": {
+    "title": "Crème",
+    "description": "Excepteur mollit enim et dolore ipsum eu non reprehenderit.",
+    "price": "1.36€ pièce"
+  },
+  "ghee": {
+    "title": "Ghee",
+    "description": "Consectetur excepteur sit id enim deserunt laborum officia.",
+    "price": "2.57€ pièce"
+  },
+  "ice-cream": {
+    "title": "Glace",
+    "description": "Aliquip id esse dolor ad adipisicing labore cillum sint est irure.",
+    "price": "3.91€ pièce"
+  },
+  "milk": {
+    "title": "Lait",
+    "description": "Laborum sint laboris consectetur officia.",
+    "price": "7.23€ pièce"
+  },
+  "parmesan-cheese": {
+    "title": "Parmesan",
+    "description": "Deserunt voluptate dolor est quis aute.",
+    "price": "1.91€ pièce"
+  },
+  "powdered-milk": {
+    "title": "Lait en poudre",
+    "description": "Excepteur eu anim consequat irure cillum fugiat nostrud.",
+    "price": "3.97€ pièce"
+  },
+  "soft-cheese": {
+    "title": "Fromage frais",
+    "description": "Aute sit officia duis excepteur.",
+    "price": "1.04€ pièce"
+  },
+  "swiss-cheese": {
+    "title": "Fromage suisse",
+    "description": "Occaecat ex consequat qui nulla sint proident do elit.",
+    "price": "1.73€ pièce"
+  },
+  "yoghurt": {
+    "title": "Yaourt",
+    "description": "Pariatur dolore amet cupidatat eiusmod pariatur officia.",
+    "price": "3.18€ pièce"
+  },
+  "egg": {
+    "title": "Oeuf",
+    "description": "Pariatur dolore amet cupidatat eiusmod pariatur officia.",
+    "price": "0,5€ pièce"
+  }
+}
