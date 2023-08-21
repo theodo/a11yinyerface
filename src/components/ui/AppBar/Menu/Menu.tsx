@@ -3,6 +3,7 @@ import { Box } from "@mui/system";
 import { useAtom } from "jotai";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
 
 import { CartStoreItem, cartAtom } from "src/store/cart";
 import {
@@ -37,6 +38,8 @@ const Menu: React.FC = () => {
       return acc + quantity;
     }, 0);
   };
+
+  const { t } = useTranslation("common");
 
   return (
     <>
@@ -77,7 +80,7 @@ const Menu: React.FC = () => {
                 height={23}
               />
               <Typography fontWeight="bold">
-                {productCategoryLabelMapping[text]}
+                {t(productCategoryLabelMapping[text])}
               </Typography>
               {pathname === `/${link}` && (
                 <Image src={require("/public/icons/dot.svg")} alt=""></Image>
@@ -102,7 +105,9 @@ const Menu: React.FC = () => {
               position: "relative",
             }}
           >
-            <Typography fontWeight="bold">Panier</Typography>
+            <Typography fontWeight="bold">
+              {t("app-bar.cart-button")}
+            </Typography>
             <Image
               src={require("/public/icons/white-cart.svg")}
               alt=""

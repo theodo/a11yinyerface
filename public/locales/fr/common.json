@@ -17,5 +17,13 @@
     "apple": "1 pomme",
     "egg": "1 oeuf",
     "flour": "1 dose de farine de blé"
+  },
+  "product-category": {
+    "fruit": "Fruit",
+    "flour": "Farine",
+    "dairy-coffee-egg": "Oeuf"
+  },
+  "app-bar": {
+    "cart-button": "Panier"
   }
 }
