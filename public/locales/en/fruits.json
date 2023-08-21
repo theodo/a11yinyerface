@@ -1,0 +1,62 @@
+{
+  "orange": {
+    "title": "Orange",
+    "description": "Sed accumsan felis.",
+    "price": "5.23$ each"
+  },
+  "apple": {
+    "title": "Apple",
+    "description": "Tarragon - Primerba, Paste",
+    "price": "3.99$ each"
+  },
+  "peach": {
+    "title": "Peach",
+    "description": "Consectetur nulla eiusmod magna ullamco est",
+    "price": "1.32$ each"
+  },
+  "abricot": {
+    "title": "Abricot",
+    "description": "irure fugiat excepteur nostrud id elit ipsum. ",
+    "price": "2.99$ each"
+  },
+  "plum": {
+    "title": "Plum",
+    "description": "Culpa ex proident cillum amet sit ipsum. Est ",
+    "price": "1.23$ each"
+  },
+  "pear": {
+    "title": "Pear",
+    "description": "eu nostrud magna adipisicing duis et id.",
+    "price": "2.56$ each"
+  },
+  "kiwi": {
+    "title": "Kiwi",
+    "description": "eu nostrud magna adipisicing duis et id.",
+    "price": "1.73$ each"
+  },
+  "passion-fruit": {
+    "title": "Passion fruit",
+    "description": "eu nostrud magna adipisicing duis et id.",
+    "price": "5.27$ each"
+  },
+  "pomegranate": {
+    "title": "Pomegranate",
+    "description": "eu nostrud magna adipisicing duis et id.",
+    "price": "7.23$ each"
+  },
+  "grape": {
+    "title": "Grape",
+    "description": "eu nostrud magna adipisicing duis et id.",
+    "price": "0.13$ each"
+  },
+  "mango": {
+    "title": "Mango",
+    "description": "eu nostrud magna adipisicing duis et id.",
+    "price": "8.02$ each"
+  },
+  "tomato": {
+    "title": "Tomato",
+    "description": "eu nostrud magna adipisicing duis et id.",
+    "price": "1.02$ each"
+  }
+}

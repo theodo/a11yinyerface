@@ -33,7 +33,9 @@ const getProductCardElement = ({
 }: IGetProductCardElement) => {
   switch (productCardType) {
     case ProductCardTypeEnum.Image:
-      return <ProductCardImage product={product} />;
+      return (
+        <ProductCardImage product={product} translationFile={translationFile} />
+      );
     case ProductCardTypeEnum.Text:
       return (
         <ProductCard product={product} translationFile={translationFile} />
@@ -47,7 +49,9 @@ const getProductCardElement = ({
         />
       );
     default:
-      return <ProductCardImage product={product} />;
+      return (
+        <ProductCardImage product={product} translationFile={translationFile} />
+      );
   }
 };
 
