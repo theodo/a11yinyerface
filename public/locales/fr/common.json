@@ -28,5 +28,13 @@
   },
   "cards": {
     "add-button": "Ajouter"
+  },
+  "cart": {
+    "title": "Panier",
+    "product": "Produit",
+    "price": "Prix",
+    "quantity": "Quantité",
+    "remove": "Retirer",
+    "validate": "Valider le panier"
   }
 }
