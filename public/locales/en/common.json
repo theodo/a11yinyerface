@@ -28,5 +28,13 @@
   },
   "cards": {
     "add-button": "Add"
+  },
+  "cart": {
+    "title": "Cart",
+    "product": "Product",
+    "price": "Price",
+    "quantity": "Quantity",
+    "remove": "Remove",
+    "validate": "Validate cart"
   }
 }
