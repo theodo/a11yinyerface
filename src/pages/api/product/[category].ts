@@ -16,7 +16,7 @@ export default function handler(
       res.status(200).json(fruitsData as Product[]);
       break;
 
-    case ProductCategory.FLOURS:
+    case ProductCategory.FLOUR:
       res.status(200).json(flourData as Product[]);
       break;
 

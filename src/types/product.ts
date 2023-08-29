@@ -9,7 +9,7 @@ export class Product {
 
 export enum ProductCategory {
   "FRUITS" = "FRUITS",
-  "FLOURS" = "FLOURS",
+  "FLOUR" = "FLOUR",
   "DAIRY_COFFEE_EGG" = "DAIRY_COFFEE_EGG",
 }
 
@@ -18,6 +18,6 @@ export const productCategoryLabelMapping: Record<
   string
 > = {
   [ProductCategory.FRUITS]: "product-category.fruit",
-  [ProductCategory.FLOURS]: "product-category.flour",
+  [ProductCategory.FLOUR]: "product-category.flour",
   [ProductCategory.DAIRY_COFFEE_EGG]: "product-category.dairy-coffee-egg",
 };

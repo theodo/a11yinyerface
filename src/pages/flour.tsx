@@ -14,7 +14,7 @@ import { StaticProps } from "./_app";
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
 const FlourPage: NextPage = () => {
-  const { data, error } = useSwr<Product[]>("/api/product/flours", fetcher);
+  const { data, error } = useSwr<Product[]>("/api/product/flour", fetcher);
 
   useSimulator([SIMULATE_EFFECT.DRUNKEN_MOUSE]);
 
