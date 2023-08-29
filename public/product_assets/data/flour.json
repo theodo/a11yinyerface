@@ -5,7 +5,7 @@
     "description": "spelt.description",
     "price": "spelt.price",
     "previewImageUrl": "/product_assets/flours/spelt-flour.jpg",
-    "category": "SPELT_FLOUR"
+    "category": "FLOUR"
   },
   {
     "id": "609e2684-e2b6-11ed-b5ea-0242ac120002",
@@ -13,7 +13,7 @@
     "description": "wheat.description",
     "price": "wheat.price",
     "previewImageUrl": "/product_assets/flours/wheat-flour.jpg",
-    "category": "WHEAT_FLOUR"
+    "category": "FLOUR"
   },
   {
     "id": "5649832c-e2b6-11ed-b5ea-0242ac120002",
@@ -21,7 +21,7 @@
     "description": "buckwheat.description",
     "price": "buckwheat.price",
     "previewImageUrl": "/product_assets/flours/buckwheat-flour.jpg",
-    "category": "BUCKWHEAT_FLOUR"
+    "category": "FLOUR"
   },
   {
     "id": "5bba041c-e2b6-11ed-b5ea-0242ac120002",
@@ -29,7 +29,7 @@
     "description": "rye.description",
     "price": "rye.price",
     "previewImageUrl": "/product_assets/flours/rye-flour.jpg",
-    "category": "RYE_FLOUR"
+    "category": "FLOUR"
   },
   {
     "id": "fc91d8f2-e8b9-11ed-a05b-0242ac120003",
@@ -37,7 +37,7 @@
     "description": "almond.description",
     "price": "almond.price",
     "previewImageUrl": "/product_assets/flours/almond-flour.jpg",
-    "category": "ALMOND_FLOUR"
+    "category": "FLOUR"
   },
   {
     "id": "32a84192-e8ba-11ed-a05b-0242ac120003",
@@ -45,7 +45,7 @@
     "description": "chickpea.description",
     "price": "chickpea.price",
     "previewImageUrl": "/product_assets/flours/chickpea-flour.jpg",
-    "category": "CHICKPEA_FLOUR"
+    "category": "FLOUR"
   },
   {
     "id": "b731b920-e8ba-11ed-a05b-0242ac120003",
@@ -53,7 +53,7 @@
     "description": "coconut.description",
     "price": "coconut.price",
     "previewImageUrl": "/product_assets/flours/coconut-flour.jpg",
-    "category": "COCONUT_FLOUR"
+    "category": "FLOUR"
   },
   {
     "id": "d5aa0240-e8ba-11ed-a05b-0242ac120003",
@@ -61,7 +61,7 @@
     "description": "corn.description",
     "price": "corn.price",
     "previewImageUrl": "/product_assets/flours/corn-flour.jpg",
-    "category": "CORN_FLOUR"
+    "category": "FLOUR"
   },
   {
     "id": "f95ae07e-e8ba-11ed-a05b-0242ac120003",
@@ -69,7 +69,7 @@
     "description": "oat.description",
     "price": "oat.price",
     "previewImageUrl": "/product_assets/flours/oat-flour.jpg",
-    "category": "OAT_FLOUR"
+    "category": "FLOUR"
   },
   {
     "id": "20f2f62c-e8bf-11ed-a05b-0242ac120003",
@@ -77,6 +77,6 @@
     "description": "rice.description",
     "price": "rice.price",
     "previewImageUrl": "/product_assets/flours/rice-flour.jpg",
-    "category": "RICE_FLOUR"
+    "category": "FLOUR"
   }
 ]

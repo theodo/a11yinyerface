@@ -18,7 +18,7 @@ const menuItems = [
     icon: require("/public/icons/apple.svg"),
   },
   {
-    text: ProductCategory.FLOURS,
+    text: ProductCategory.FLOUR,
     link: "flour",
     icon: require("/public/icons/flour.svg"),
   },
