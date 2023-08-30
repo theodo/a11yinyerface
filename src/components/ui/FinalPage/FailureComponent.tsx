@@ -1,14 +1,14 @@
 import { List, ListItem, Typography } from "@mui/material";
 import { Container } from "@mui/system";
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
 
 interface IFailureComponent {
-  missingCartTitles: string[];
+  missingCart: { title: string; category: string }[];
 }
 
-const FailureComponent: React.FC<IFailureComponent> = ({
-  missingCartTitles,
-}) => {
+const FailureComponent: React.FC<IFailureComponent> = ({ missingCart }) => {
+  const { t } = useTranslation();
   return (
     <Container
       sx={{
@@ -22,7 +22,7 @@ const FailureComponent: React.FC<IFailureComponent> = ({
       <Image src={require("/public/icons/smiley-sad.svg")} alt="" />
       <Container sx={{ width: "700px", textAlign: "center" }}>
         <Typography fontSize={60} color="primary.main">
-          Dommage,
+          {t("final-page.failure.title")}
         </Typography>
         <Container
           sx={{
@@ -32,13 +32,13 @@ const FailureComponent: React.FC<IFailureComponent> = ({
           }}
         >
           <Typography fontSize={20} fontWeight={700} textAlign="center">
-            Tu as oublié d&apos;ajouter les ingrédients suivants à ton panier :
+            {t("final-page.failure.subtitle")}
           </Typography>
           <Typography fontSize={20} fontWeight={700} textAlign="center">
             <List sx={{ listStyleType: "disc" }}>
-              {missingCartTitles.map((title) => (
-                <ListItem sx={{ display: "list-item", padding: 0 }} key={title}>
-                  {title}
+              {missingCart.map((item) => (
+                <ListItem sx={{ display: "list-item" }} key={item.title}>
+                  {t(item.category + ":" + item.title + ".title")}
                 </ListItem>
               ))}
             </List>

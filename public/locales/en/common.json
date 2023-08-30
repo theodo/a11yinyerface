@@ -36,5 +36,16 @@
     "quantity": "Quantity",
     "remove": "Remove",
     "validate": "Validate cart"
+  },
+  "final-page": {
+    "failure": {
+      "title": "Too bad",
+      "subtitle": "You forgot to add the following items to your cart:",
+      "try-again": "Retry the experience ?"
+    },
+    "success": {
+      "title": "Congratulations,",
+      "subtitle": "you managed to order the ingredients for your apple pie."
+    }
   }
 }

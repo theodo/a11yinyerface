@@ -36,5 +36,16 @@
     "quantity": "Quantité",
     "remove": "Retirer",
     "validate": "Valider le panier"
+  },
+  "final-page": {
+    "failure": {
+      "title": "Dommage",
+      "subtitle": "Tu as oublié d'ajouter les ingrédients suivants à ton panier :",
+      "try-again": "Retenter l'expérience ?"
+    },
+    "success": {
+      "title": "Félicitations,",
+      "subtitle": "tu as réussi à commander les ingrédients pour réaliser ta tarte aux pommes."
+    }
   }
 }
