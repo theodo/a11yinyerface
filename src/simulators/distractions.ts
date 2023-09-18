@@ -1,11 +1,10 @@
 let distractionIntervale: NodeJS.Timer;
 
-export const activeDistractions = () => {
-  scriptImportedFromExternalRepository();
+export const activeDistractions = (texts: string[]) => {
+  scriptImportedFromExternalRepository(texts);
 };
 
 const timeouts: NodeJS.Timeout[] = [];
-
 // used to save and clear timeouts
 export const TIMEOUTS = {
   timeouts,
@@ -73,7 +72,7 @@ function removeClass(element: string, classname: string) {
   }
 }
 
-const scriptImportedFromExternalRepository = () => {
+const scriptImportedFromExternalRepository = (texts: string[]) => {
   function createElement(
     element: string,
     classname: string,
@@ -92,14 +91,6 @@ const scriptImportedFromExternalRepository = () => {
   function createTextElements(text: string, index: number) {
     createElement("span", `wds-text-element-${index}`, text);
   }
-
-  const texts = [
-    "J'ai mangé ce midi ?",
-    "Je dois retourner travailler...",
-    "La ventilation fait beaucoup de bruit aujourd'hui. bzzzzzz",
-    "Est-ce que je devrais répondre à ce message ?",
-    "Je dois me concentrer, me concentrer, me concentrer",
-  ];
 
   texts.forEach(createTextElements);
 

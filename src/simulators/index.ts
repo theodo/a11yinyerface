@@ -17,9 +17,12 @@ import { activeScrambleLetter, removeScrambleLetter } from "./scrambleLetter";
 import { COLOR_FILTER_ID, SIMULATE_EFFECT } from "./types";
 import { activeFullZoom, resetZoom } from "./zoom";
 
-export const useSimulator = (effects: SIMULATE_EFFECT[]) => {
+export const useSimulator = (
+  effects: SIMULATE_EFFECT[],
+  texts: string[] = []
+) => {
   useEffect(() => {
-    activateSimulators(effects);
+    activateSimulators(effects, texts);
 
     return () => removeSimulations();
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -35,7 +38,10 @@ export const useColorFilterSimulator = (filterIds: COLOR_FILTER_ID[]) => {
   }, filterIds);
 };
 
-export const activateSimulators = (effects: SIMULATE_EFFECT[]) => {
+export const activateSimulators = (
+  effects: SIMULATE_EFFECT[],
+  texts: string[]
+) => {
   effects.forEach((effect) => {
     switch (effect) {
       case SIMULATE_EFFECT.ZOOM:
@@ -60,7 +66,7 @@ export const activateSimulators = (effects: SIMULATE_EFFECT[]) => {
         activeScrambleLetter();
         break;
       case SIMULATE_EFFECT.DISTRACTIONS:
-        activeDistractions();
+        activeDistractions(texts);
         break;
     }
   });
