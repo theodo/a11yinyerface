@@ -1,5 +1,6 @@
 import { CircularProgress } from "@mui/material";
 import type { NextPage } from "next";
+import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import useSwr from "swr";
 
@@ -20,7 +21,17 @@ const EggPage: NextPage = () => {
     fetcher
   );
 
-  useSimulator([SIMULATE_EFFECT.DISTRACTIONS]);
+  const { t } = useTranslation();
+
+  const texts = [
+    t("distraction:distraction-1"),
+    t("distraction:distraction-2"),
+    t("distraction:distraction-3"),
+    t("distraction:distraction-4"),
+    t("distraction:distraction-5"),
+  ];
+
+  useSimulator([SIMULATE_EFFECT.DISTRACTIONS], texts);
 
   if (data === undefined || error) {
     return <CircularProgress />;
@@ -40,7 +51,11 @@ export default EggPage;
 export async function getStaticProps({ locale }: StaticProps) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["dairy_coffee_egg", "common"])),
+      ...(await serverSideTranslations(locale, [
+        "dairy_coffee_egg",
+        "common",
+        "distraction",
+      ])),
     },
   };
 }
