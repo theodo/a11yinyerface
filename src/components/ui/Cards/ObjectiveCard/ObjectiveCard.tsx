@@ -5,6 +5,7 @@ const ObjectiveCard: React.FC = () => {
   return (
     <Paper
       sx={{
+        minWidth: "330px",
         width: "330px",
         height: "300px",
         borderRadius: "8px",
