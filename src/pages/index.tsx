@@ -44,9 +44,12 @@ const Home: NextPage = () => {
         flexDirection: "column",
         justifyContent: "center",
         textAlign: "center",
-        rowGap: "2em",
+        rowGap: "1em",
       }}
     >
+      <Typography variant="h1" fontSize={40} color="primary.main">
+        A11Y INYERFACE
+      </Typography>
       <Container sx={{ width: "800px" }}>{presentationText}</Container>
       <Stack spacing="2em" textAlign="center" justifyContent="center">
         <Stack direction="row" justifyContent="center" spacing="5em">
