@@ -20,19 +20,20 @@ const Home: NextPage = () => {
 
   const presentationText = (
     <Typography>
-      A11Y INYERFACE est un projet visant à{" "}
+      A11Y INYERFACE est un projet visant à vous faire{" "}
       <Box component="span" sx={emphasisStyle}>
-        sensibiliser les utilisateurs aux principes de l&apos;accessibilité{" "}
+        vivre l&apos;expérience de personas handicapés{" "}
       </Box>
-      et à les encourager à{" "}
+      grâce à des simulations interactives. En vous mettant dans leur peau, vous
+      découvrirez{" "}
       <Box component="span" sx={emphasisStyle}>
-        adopter des pratiques{" "}
+        les défis auxquels ils sont confrontés au quotidien.{" "}
       </Box>{" "}
-      qui rendent le web{" "}
+      Notre objectif est de{" "}
       <Box component="span" sx={emphasisStyle}>
-        plus inclusif
+        sensibiliser à l&apos;importance de l&apos;accessibilité pour un web
+        plus inclusif.
       </Box>{" "}
-      pour tous.
     </Typography>
   );
 
@@ -43,16 +44,20 @@ const Home: NextPage = () => {
         flexDirection: "column",
         justifyContent: "center",
         textAlign: "center",
-        marginTop: "3em",
-        width: "120%",
-        marginLeft: "-10%",
-        marginBottom: "-5em",
+        rowGap: "2em",
       }}
     >
-      {presentationText}
-      <Stack py="2em" spacing="5em" textAlign="center" justifyContent="center">
-        <Stack direction="row" justifyContent="space-around" spacing="5em">
-          <Image src={require("/public/images/apple-pie.jpeg")} alt="" />
+      <Container sx={{ width: "800px" }}>{presentationText}</Container>
+      <Stack spacing="2em" textAlign="center" justifyContent="center">
+        <Stack direction="row" justifyContent="center" spacing="5em">
+          <Image
+            src={require("/public/images/apple-pie.jpeg")}
+            alt=""
+            width={330}
+            height={300}
+            objectFit="cover"
+            style={{ borderRadius: "8px" }}
+          />
           <ObjectiveCard />
         </Stack>
         <AppLink text="Commencer l'expérience" link="/fruits" />

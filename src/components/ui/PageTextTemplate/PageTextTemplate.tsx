@@ -11,8 +11,8 @@ const PageTextTemplate: React.FC<IPageTextTemplate> = ({ content }) => {
       sx={{
         display: "flex",
         justifyContent: "center",
-        height: "100vh",
-        width: "100vh",
+        minHeight: "100vh",
+        width: "auto",
       }}
     >
       <Container
@@ -30,9 +30,9 @@ const PageTextTemplate: React.FC<IPageTextTemplate> = ({ content }) => {
       <Container
         sx={{
           display: "flex",
-          justifyContent: "center",
           flexDirection: "column",
-          marginTop: "-15vh",
+          rowGap: "2em",
+          margin: "30px 0",
         }}
       >
         <Image
@@ -40,9 +40,14 @@ const PageTextTemplate: React.FC<IPageTextTemplate> = ({ content }) => {
           alt=""
           role="presentation"
           width={160}
-          height={55}
+          height={40}
+          style={{ justifySelf: "top" }}
         />
-        {content}
+        <Container
+          sx={{ height: "100%", display: "flex", justifyContent: "center" }}
+        >
+          {content}
+        </Container>
       </Container>
     </Container>
   );

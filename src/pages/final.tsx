@@ -26,11 +26,11 @@ const FinalPage: NextPage = () => {
   const content = (
     <Container
       sx={{
-        textAlign: "center",
-        marginTop: "15vh",
-        justifyContent: "center",
         display: "flex",
         flexDirection: "column",
+        justifyContent: "center",
+        textAlign: "center",
+        rowGap: "2em",
       }}
     >
       {isCartValid ? SuccessComponent : FailureComponent({ missingCartTitles })}
