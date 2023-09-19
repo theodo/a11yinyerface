@@ -50,12 +50,6 @@ a {
   z-index: 10000 !important;
 }
 
-.wds-img-element.wds-img-animation-0 {
-  display: block !important;
-  background-image: url("/images/burger.png") !important;
-  animation: move 5s infinite !important;
-}
-
 @keyframes move {
   from {
     top: -300px;
@@ -184,7 +178,11 @@ a {
 }
 
 .wds-paragraph-animation {
-  animation: flickerAnimation 1.2s infinite !important;
+  animation: flickerAnimation 1s infinite !important;
+}
+
+.wds-button-animation {
+  animation: flickerAnimation 1s infinite !important;
 }
 
 @keyframes flickerAnimation {

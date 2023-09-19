@@ -37,9 +37,9 @@ export const TIMEOUTS = {
 const h2 = "h2";
 const p = "p";
 const img = "img";
+const button = "button";
 
 //dom elements to be created
-const imgEl_0 = ".wds-img-element";
 const textEl_0 = ".wds-text-element-0";
 const textEl_1 = ".wds-text-element-1";
 const textEl_2 = ".wds-text-element-2";
@@ -48,8 +48,8 @@ const textEl_4 = ".wds-text-element-4";
 
 //classes for css animations
 const paragraphAnimation = "wds-paragraph-animation";
+const buttonAnimation = "wds-button-animation";
 const headingAnimation = "wds-heading-animation";
-const imgAnimation_0 = "wds-img-animation-0";
 const imgAnimation_1 = "wds-img-animation-1";
 const textAnimation_0 = "wds-text-animation-0";
 const textAnimation_1 = "wds-text-animation-1";
@@ -107,44 +107,43 @@ const scriptImportedFromExternalRepository = () => {
   function launchAnimations() {
     TIMEOUTS.setTimeout(() => {
       addClass(p, paragraphAnimation);
-      addClass(imgEl_0, imgAnimation_0);
+      addClass(textEl_0, textAnimation_0);
       addClass(img, imgAnimation_1);
-      addClass(h2, headingAnimation);
-    }, 500);
+    }, 100);
 
     TIMEOUTS.setTimeout(() => {
-      removeClass(imgEl_0, imgAnimation_0);
-      addClass(textEl_0, textAnimation_0);
-    }, 5000);
+      addClass(h2, headingAnimation);
+      addClass(button, buttonAnimation);
+    }, 400);
 
     TIMEOUTS.setTimeout(() => {
       removeClass(textEl_0, textAnimation_0);
       addClass(textEl_1, textAnimation_1);
-    }, 12000);
+    }, 5000);
 
     TIMEOUTS.setTimeout(() => {
       removeClass(textEl_1, textAnimation_1);
       addClass(textEl_2, textAnimation_2);
-    }, 20000);
+    }, 13000);
 
     TIMEOUTS.setTimeout(() => {
       removeClass(textEl_2, textAnimation_2);
       addClass(textEl_3, textAnimation_3);
-    }, 26000);
+    }, 19000);
 
     TIMEOUTS.setTimeout(() => {
       removeClass(textEl_3, textAnimation_3);
       addClass(textEl_4, textAnimation_4);
-    }, 32000);
+    }, 25000);
 
     TIMEOUTS.setTimeout(() => {
       removeClass(textEl_4, textAnimation_4);
       TIMEOUTS.clearAllTimeouts();
-    }, 36000);
+    }, 29000);
   }
 
   launchAnimations();
-  distractionIntervale = setInterval(launchAnimations, 36000);
+  distractionIntervale = setInterval(launchAnimations, 29000);
 };
 
 export const removeDistractions = () => {
@@ -153,7 +152,7 @@ export const removeDistractions = () => {
   removeClass(p, paragraphAnimation);
   removeClass(img, imgAnimation_1);
   removeClass(h2, headingAnimation);
-  removeClass(imgEl_0, imgAnimation_0);
+  removeClass(button, buttonAnimation);
   removeClass(textEl_0, textAnimation_0);
   removeClass(textEl_1, textAnimation_1);
   removeClass(textEl_2, textAnimation_2);
