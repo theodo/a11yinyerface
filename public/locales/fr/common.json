@@ -18,6 +18,30 @@
     "egg": "1 oeuf",
     "flour": "1 dose de farine de blé"
   },
+  "help-cards": {
+    "shopping-list": {
+      "title": "Ajoute à ton panier",
+      "body": "Une pomme, de la farine de blé et un oeuf"
+    },
+    "disabilities": {
+      "color-blindness": {
+        "title": "Daltonisme",
+        "body": "Vous voyez actuellement la page telle qu'un utilisateur atteint de daltonisme pourrait la voir. Le daltonisme est une anomalie de la vision qui va empêcher votre utilisateur de percevoir certaines couleurs. Il existe plusieurs types de daltonisme, vous voyez ici la page sous un spectre de protanopie (l'utilisateur ne détecte pas la couleur rouge) mais certains utilisateurs pourraient ne pas percevoir le vert, le bleu voire aucune des trois couleurs. On estime que 45 personnes sur 1000 sont daltoniennes.Pour s'assurer que votre site pourra être utilisé par des personnes souffrant de daltonisme, pensez à vérifier sur vos applications que les informations ne sont pas transmises uniquement par des images."
+      },
+      "parkinson": {
+        "title": "Parkinson",
+        "body": "Ici, nous avons tenté de vous donner un apercu de ce qu'un utilisateur souffrant de la maladie de Parkinson pourrait expérimenter. La maladie est associée à des symptômes moteurs, comme par exemple les tremblements que nous avons simulés. On estime qu'une personne sur 1000 présente les symptomes de cette maladie. Pour aider ces utilisateurs, pensez à utiliser des boutons et des liens assez larges et à vérifier que la navigation au clavier est possible"
+      },
+      "attention-deficit": {
+        "title": "Troubles de l'attention",
+        "body": "Ici, nous avons essayé de simuler ce qu'une personne avec des troubles de l'attention pourrait expérimenter en naviguant sur le site que vous développer. En France, on estime qu'environ 25 adultes sur 1000 souffrent de troubles de l'attention.Pour aider ces utilisateurs, pensez à ne donner que les informations qui sont strictement nécessaires pour ne pas brouiller davantage les pensées de vos utilisateurs."
+      },
+      "dyslexia": {
+        "title": "Dyslexie",
+        "body": "Cette page peut vous donner une idée du vécu d'une personne atteinte de dyslexie. La dyslexie est un trouble de la lecture qui touche entre 2.5% et 16% de la population.Si vous voulez faciliter la navigation pour vos utilisateurs, créer des composants très espacés, en faisant attention à la typographie que vous utilisez."
+      }
+    }
+  },
   "product-category": {
     "fruit": "Fruit",
     "flour": "Farine",

@@ -18,6 +18,30 @@
     "egg": "1 egg",
     "flour": "1 dose of wheat flour"
   },
+  "help-cards": {
+    "shopping-list": {
+      "title": "Add to your cart",
+      "body": "An apple, some wheat flour and an egg"
+    },
+    "disabilities": {
+      "color-blindness": {
+        "title": "Color-blindness",
+        "body": "You are currently viewing the page as a color-blind user might see it.  Color blindness is a vision anomaly that prevents your user from perceiving certain colors. There are several types of color blindness; here you see the page under a protanopia spectrum (the user does not detect the color red), but some users may not perceive green, blue or any of the three colors. An estimated 45 out of 1000 people are color-blind. To ensure that your site can be used by people suffering from color blindness, remember to check on your applications that the information is not conveyed solely by images. "
+      },
+      "parkinson": {
+        "title": "Parkinson",
+        "body": "Here, we've tried to give you a glimpse of what a user suffering from Parkinson's disease might experience. The disease is associated with motor symptoms, such as the tremors we've simulated. It is estimated that one person in 1000 suffers from the symptoms of this disease. To help these users, use large buttons and links, and check that keyboard navigation is possible."
+      },
+      "attention-deficit": {
+        "title": "Attention deficit",
+        "body": "Here, we've tried to simulate what a person with ADD might experience when browsing the site you're developing. In France, it is estimated that around 25 out of every 1,000 adults suffer from attention deficit disorders. To help these users, remember to give only the information that is strictly necessary, so as not to further confuse your users' thoughts."
+      },
+      "dyslexia": {
+        "title": "Dyslexie",
+        "body": "Cette page peut vous donner une idée du vécu d'une personne atteinte de dyslexie. La dyslexie est un trouble de la lecture qui touche entre 2.5% et 16% de la population. Si vous voulez faciliter la navigation pour vos utilisateurs, créer des composants très espacés, en faisant attention à la typographie que vous utilisez"
+      }
+    }
+  },
   "product-category": {
     "fruit": "Fruit",
     "flour": "Flour",
