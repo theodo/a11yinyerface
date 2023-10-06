@@ -15,6 +15,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import AppBar from "components/ui/AppBar/AppBar";
 import AppLink from "src/components/ui/Buttons/AppLink";
+import HelpCardsGroup from "src/components/ui/Cards/HelpCard/HelpCard";
 import { useSimulator } from "src/simulators";
 import { SIMULATE_EFFECT } from "src/simulators/types";
 import { cartAtom } from "src/store/cart";
@@ -50,6 +51,7 @@ const CartPage: NextPage = () => {
   return (
     <>
       <AppBar />
+      <HelpCardsGroup disability="dyslexia" />
       <Container
         className="table-container"
         sx={{

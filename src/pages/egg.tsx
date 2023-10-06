@@ -42,6 +42,7 @@ const EggPage: NextPage = () => {
       error={error}
       productCardType={ProductCardTypeEnum.Text}
       translationFile="dairy_coffee_egg"
+      disability="attention-deficit"
     />
   );
 };

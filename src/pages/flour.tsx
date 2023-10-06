@@ -24,6 +24,7 @@ const FlourPage: NextPage = () => {
       error={error}
       productCardType={ProductCardTypeEnum.TinyButton}
       translationFile="flour"
+      disability="parkinson"
     />
   );
 };
