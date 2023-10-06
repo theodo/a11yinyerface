@@ -17,7 +17,12 @@ const FruitsPage: NextPage = () => {
   useColorFilterSimulator([COLOR_FILTER_ID.PROTANOPIA]);
 
   return (
-    <PageGridTemplate data={data} error={error} translationFile="fruits" />
+    <PageGridTemplate
+      data={data}
+      error={error}
+      translationFile="fruits"
+      disability="color-blindness"
+    />
   );
 };
 

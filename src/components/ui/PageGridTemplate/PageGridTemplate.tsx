@@ -5,6 +5,7 @@ import AppBar from "components/ui/AppBar/AppBar";
 import ProductCardImage from "src/components/ui/Cards/ProductCardImage/ProductCardImage";
 import { Product } from "src/types/product";
 
+import HelpCard from "../Cards/HelpCard/HelpCard";
 import ProductCard from "../Cards/ProductCard/ProductCard";
 
 export interface IPageGridTemplate {
@@ -12,6 +13,7 @@ export interface IPageGridTemplate {
   error: Error;
   productCardType?: ProductCardTypeEnum;
   translationFile?: string;
+  disability: string;
 }
 
 interface IGetProductCardElement {
@@ -60,6 +62,7 @@ const PageGridTemplate: React.FC<IPageGridTemplate> = ({
   error,
   productCardType,
   translationFile,
+  disability,
 }) => {
   if (data === undefined || error) {
     return <CircularProgress />;
@@ -68,6 +71,7 @@ const PageGridTemplate: React.FC<IPageGridTemplate> = ({
   return (
     <>
       <AppBar />
+      <HelpCard displayShoppingList={true} disability={disability} />
       <Container>
         <Grid container spacing={4} marginY={2}>
           {shuffle(data).map((product) => (
