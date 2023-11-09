@@ -41,8 +41,11 @@ const AddToCartButton: React.FC<IAddToCartButton> = ({
   let addImageSize = 22;
 
   if (tiny) {
-    styleButton.fontSize = "10px";
-    addImageSize = 15;
+    styleButton.fontSize = "5px";
+    styleButton.minWidth = "0";
+    styleButton.padding = "3px";
+    styleButton.gap = "3px";
+    addImageSize = 6;
   }
 
   return (
