@@ -28,6 +28,7 @@ const ProductCard: React.FC<IProductCard> = ({
             justifyContent: "space-between",
             width: "100%",
             padding: "5px",
+            alignItems: "center",
           }}
         >
           <Typography style={stylePrice}>{t(product.price)}</Typography>
