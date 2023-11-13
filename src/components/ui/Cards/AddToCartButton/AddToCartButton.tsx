@@ -41,16 +41,15 @@ const AddToCartButton: React.FC<IAddToCartButton> = ({
   let addImageSize = 22;
 
   if (tiny) {
-    styleButton.fontSize = "5px";
     styleButton.minWidth = "0";
     styleButton.padding = "3px";
     styleButton.gap = "3px";
-    addImageSize = 6;
+    addImageSize = 12;
   }
 
   return (
     <Button aria-label="Add cart" style={styleButton} onClick={addToCart}>
-      {t("cards.add-button")}
+      {!tiny && t("cards.add-button")}
       <Image
         src={require("public/icons/add.png")}
         width={addImageSize}
