@@ -75,7 +75,7 @@ const PageGridTemplate: React.FC<IPageGridTemplate> = ({
       <Container>
         <Grid container spacing={4} marginY={2}>
           {shuffle(data).map((product) => (
-            <Grid key={product.id} item xs={3}>
+            <Grid key={product.id} item xs={6} md={3}>
               {getProductCardElement({
                 productCardType,
                 product,
