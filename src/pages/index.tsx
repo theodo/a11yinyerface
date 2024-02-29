@@ -1,4 +1,10 @@
-import { Stack, Container, Typography, Box } from "@mui/material";
+import {
+  Stack,
+  Container,
+  Typography,
+  Box,
+  useMediaQuery,
+} from "@mui/material";
 import { useAtom } from "jotai";
 import type { NextPage } from "next";
 import Image from "next/image";
@@ -10,6 +16,7 @@ import AppLink from "src/components/ui/Buttons/AppLink";
 import ObjectiveCard from "src/components/ui/Cards/ObjectiveCard/ObjectiveCard";
 import PageTextTemplate from "src/components/ui/PageTextTemplate/PageTextTemplate";
 import { cartAtom } from "src/store/cart";
+import theme from "src/theming/theme";
 
 import { StaticProps } from "./_app";
 
@@ -22,6 +29,7 @@ const Home: NextPage = () => {
   }, [setCart]);
 
   const emphasisStyle = { color: "primary.main", fontWeight: "bold" };
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   const presentationText = (
     <Typography>
@@ -53,9 +61,11 @@ const Home: NextPage = () => {
       <Typography variant="h1" fontSize={40} color="primary.main">
         A11Y INYERFACE
       </Typography>
-      <Container sx={{ width: "800px" }}>{presentationText}</Container>
+      <Container sx={{ width: isMobile ? "100%" : "800px" }}>
+        {presentationText}
+      </Container>
       <Stack spacing="2em" textAlign="center" justifyContent="center">
-        <Stack direction="row" justifyContent="center" spacing="5em">
+        <Stack direction="row" justifyContent="center">
           <Image
             src={require("/public/images/apple-pie.jpeg")}
             alt=""
