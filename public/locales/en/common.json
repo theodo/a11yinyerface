@@ -41,7 +41,8 @@
         "body": "Cette page peut vous donner une idée du vécu d'une personne atteinte de dyslexie. La dyslexie est un trouble de la lecture qui touche entre 2.5% et 16% de la population. Si vous voulez faciliter la navigation pour vos utilisateurs, créer des composants très espacés, en faisant attention à la typographie que vous utilisez"
       }
     },
-    "ellipsis-reduce": "Reduce"
+    "ellipsis-reduce": "Reduce",
+    "ellipsis-expand": "Expand"
   },
   "product-category": {
     "fruit": "Fruit",
