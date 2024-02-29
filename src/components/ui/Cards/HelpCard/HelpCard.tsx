@@ -6,7 +6,7 @@ interface IHelpCard {
   title: string;
   body: string;
   width?: string;
-  withEllipsis?: boolean;
+  withEllipsis: boolean;
 }
 
 interface IHelpCardsGroup {
@@ -14,18 +14,14 @@ interface IHelpCardsGroup {
   disability: string;
 }
 
-const HelpCard = ({ title, body, width, withEllipsis }: IHelpCard) => {
+const HelpCard = ({ title, body, width, withEllipsis = false }: IHelpCard) => {
   const { t } = useTranslation();
 
-  const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState(!withEllipsis);
   const paperRef = useRef<HTMLDivElement>(null);
 
   const handleExpansionChange = () => {
     setExpanded(!expanded);
-    if (!expanded && paperRef.current) {
-      // Scroll to the top when expanding
-      paperRef.current.scrollTo({ top: 0, behavior: "smooth" });
-    }
   };
 
   return (
@@ -47,7 +43,6 @@ const HelpCard = ({ title, body, width, withEllipsis }: IHelpCard) => {
         style={{
           height: expanded ? "auto" : "100px",
           overflow: "hidden",
-          position: "relative",
         }}
         ref={paperRef}
       >
@@ -62,11 +57,17 @@ const HelpCard = ({ title, body, width, withEllipsis }: IHelpCard) => {
         <Typography>{body}</Typography>
       </div>
       {withEllipsis && (
-        <Button onClick={handleExpansionChange}>
-          <Typography sx={{ fontWeight: "bold", color: "black" }}>
-            {expanded ? t("help-cards.ellipsis-reduce") : "..."}
-          </Typography>
-        </Button>
+        <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
+          <Button onClick={handleExpansionChange} sx={{ padding: 0 }}>
+            <Typography
+              sx={{ fontWeight: "bold", color: "black", fontSize: "0.8em" }}
+            >
+              {expanded
+                ? t("help-cards.ellipsis-reduce")
+                : t("help-cards.ellipsis-expand")}
+            </Typography>
+          </Button>
+        </Box>
       )}
     </Paper>
   );
