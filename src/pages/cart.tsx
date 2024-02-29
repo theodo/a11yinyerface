@@ -6,6 +6,7 @@ import {
   TableCell,
   TableHead,
   TableRow,
+  useMediaQuery,
 } from "@mui/material";
 import { useAtom } from "jotai";
 import { shuffle } from "lodash-es";
@@ -19,12 +20,15 @@ import HelpCardsGroup from "src/components/ui/Cards/HelpCard/HelpCard";
 import { useSimulator } from "src/simulators";
 import { SIMULATE_EFFECT } from "src/simulators/types";
 import { cartAtom } from "src/store/cart";
+import theme from "src/theming/theme";
 import { Product } from "src/types/product";
 
 import { StaticProps } from "./_app";
 
 const CartPage: NextPage = () => {
   useSimulator([SIMULATE_EFFECT.SCRAMBLE_LETTER]);
+
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   const { t } = useTranslation([
     "common",
@@ -72,7 +76,7 @@ const CartPage: NextPage = () => {
 
         <Table
           sx={{
-            width: "600px",
+            width: isMobile ? "100%" : "600px",
             marginBottom: "30px",
           }}
         >
