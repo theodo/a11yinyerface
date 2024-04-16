@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 
+import LanguageSwitch from "src/components/ui/Buttons/LanguageSwitch";
 import { CartStoreItem, cartAtom } from "src/store/cart";
 import {
   ProductCategory,
@@ -30,7 +31,7 @@ const menuItems = [
 ];
 
 const Menu: React.FC = () => {
-  const { pathname } = useRouter();
+  const { pathname, locale } = useRouter();
   const [cart] = useAtom<CartStoreItem>(cartAtom);
 
   const cartItemsCount = () => {
@@ -48,14 +49,22 @@ const Menu: React.FC = () => {
         flex="1"
         sx={{ margin: "30px 25px" }}
         justifyContent="space-between"
+        gap={3}
       >
-        <Image
-          src={require("/public/icons/logo.svg")}
-          alt=""
-          role="presentation"
-          width={160}
-          height={55}
-        />
+        <Box display="flex" gap={5} alignItems="center">
+          <Link href={`/${locale}`} underline="none">
+            <Image
+              src={require("/public/icons/logo.svg")}
+              alt=""
+              role="presentation"
+              width={160}
+              height={55}
+            />
+          </Link>
+
+          <LanguageSwitch />
+        </Box>
+
         <Box display="flex" gap={5}>
           {menuItems.map(({ text, link, icon }) => (
             <Link
