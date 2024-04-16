@@ -1,6 +1,8 @@
 import { Container } from "@mui/material";
 import Image from "next/image";
 
+import LanguageSwitch from "src/components/ui/Buttons/LanguageSwitch";
+
 export interface IPageTextTemplate {
   content: JSX.Element;
 }
@@ -35,14 +37,24 @@ const PageTextTemplate: React.FC<IPageTextTemplate> = ({ content }) => {
           margin: "30px 0",
         }}
       >
-        <Image
-          src={require("/public/icons/logo.svg")}
-          alt=""
-          role="presentation"
-          width={160}
-          height={40}
-          style={{ justifySelf: "top" }}
-        />
+        <Container
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            rowGap: "1em",
+            alignItems: "center",
+          }}
+        >
+          <Image
+            src={require("/public/icons/logo.svg")}
+            alt=""
+            role="presentation"
+            width={160}
+            height={40}
+            style={{ justifySelf: "top" }}
+          />
+          <LanguageSwitch />
+        </Container>
         <Container
           sx={{ height: "100%", display: "flex", justifyContent: "center" }}
         >

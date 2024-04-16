@@ -76,7 +76,7 @@ const Home: NextPage = () => {
           />
           <ObjectiveCard />
         </Stack>
-        <AppLink text={t("intro-page.start")} link="/fruits" />
+        <AppLink text={t("intro-page.start")} link="fruits" />
       </Stack>
     </Container>
   );
